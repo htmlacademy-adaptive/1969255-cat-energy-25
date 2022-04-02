@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <footer class="main-footer">
 
+      <div class="main-footer__wraper">
+        <div class="main-footer__address address">
+          <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__text">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург</p>
+        </div>
+
+        <!-- <div class="main-footer__map" style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+            <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.65" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUUUOhk9A" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          </div> -->
+          <div class="main-footer__logo">
+            <a class="main-footer__logo-link" href="index.html">
+              <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип компании Кэт Энерджи">
+            </a>
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Ссылка на страницу Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ссылка на страницу YouTube</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Ссылка на страницу в Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
+              <p class="copyright__text">HTML Academy</p>
+              <!-- Здесь должен будет быть svg с логотипом HTML Academy-->
+              <span class="visually-hidden">Ссылка на на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+            </a>
+          </div>
+      </div>
+    </footer>
 
   </body>
 </html>
