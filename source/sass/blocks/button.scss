@@ -1,0 +1,19 @@
+.button {
+  background-color: $color-bg-btn;
+  font-family: $title-font;
+  color: $color-text-second;
+
+  @include text-size(14px, 18px, 400);
+}
+
+
+.button--primary {
+  @include text-size(16px, 20px, 400);
+}
+
+.button--secondary {
+  background-color: $color-bg-second;
+  color: $color-text-description;
+
+  @include text-size(16px, 20px, 400);
+}

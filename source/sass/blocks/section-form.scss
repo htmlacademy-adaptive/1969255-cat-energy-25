@@ -1,0 +1,5 @@
+.section-form__text {
+  font-family: $main-font;
+
+  @include text-size(14px, 16px, 400);
+}

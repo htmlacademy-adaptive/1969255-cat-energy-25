@@ -1,0 +1,38 @@
+.example {
+  background-color: $color-bg-second;
+}
+
+.example__title {
+  font-family: $title-font;
+  color: $color-text;
+
+  @include text-size(36px, 40px, 400);
+}
+
+.example__description {
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(14px, 18px, 400);
+}
+
+.example__stats-item-value {
+  font-family: $title-font;
+  color: $color-text;
+
+  @include text-size(24px, 24px, 400);
+}
+
+.example__stats-item-description {
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(12px, 12px, 400);
+}
+
+.example__stats-description {
+  font-family: $title-font;
+  color: $color-text;
+
+  @include text-size(14px, 20px, 400);
+}

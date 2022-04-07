@@ -1,0 +1,22 @@
+.cat-nutrition {
+  min-height: 480px;
+  background-image: url("/source/img/index-background-mob.jpg");
+  background-color: $color-bg-img;
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  object-fit: contain;
+}
+
+.cat-nutrition__title {
+  font-family: $title-font;
+  color: $color-text-second;
+
+  @include text-size(36px, 36px, 400);
+}
+
+.cat-nutrition__description {
+  font-family: $title-font;
+  color: $color-text-second;
+
+  @include text-size(14px, 14px, 400);
+}

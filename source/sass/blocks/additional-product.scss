@@ -1,0 +1,13 @@
+.additional-product__title {
+  font-family: $title-font;
+  color: $color-text-title-card;
+
+  @include text-size(16px, 16px, 400);
+}
+
+.additional-product__description-list{
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(14px, 14px, 400);
+}

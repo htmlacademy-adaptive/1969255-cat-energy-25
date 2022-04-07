@@ -1,0 +1,11 @@
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $color-bg-main;
+  color: $color-text;
+  font-family: $main-font;
+}

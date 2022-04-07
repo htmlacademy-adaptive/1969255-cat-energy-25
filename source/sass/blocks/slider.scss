@@ -1,0 +1,6 @@
+.slider-toggle {
+  font-family: $title-font;
+  color: $color-text;
+
+  @include text-size(16px, 20px, 400);
+}

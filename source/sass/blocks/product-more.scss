@@ -1,0 +1,5 @@
+.product-more__title {
+  font-family: $title-font;
+
+  @include text-size(24px, 24px, 400);
+}

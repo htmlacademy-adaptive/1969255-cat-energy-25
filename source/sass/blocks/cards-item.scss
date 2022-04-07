@@ -1,0 +1,24 @@
+.cards-item {
+  background-color: $color-bg-second;
+}
+
+.cards-item__title {
+  font-family: $title-font;
+  color: $color-text;
+
+  @include text-size(24px, 37px, 400);
+}
+
+.cards-item__description {
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(14px, 18px, 400);
+}
+
+.cards-item__link {
+  font-family: $title-font;
+  color: $color-text;
+
+  @include text-size(16px, 16px, 400);
+}
