@@ -1,6 +1,11 @@
+.address--absolute {
+  background-color: $color-bg-main;
+}
+
 .address__title {
   font-family: $title-font;
   color: $color-text-title-map;
+  text-transform: uppercase;
 
   @include text-size(16px, 20px, 400);
 }

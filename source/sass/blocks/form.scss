@@ -7,6 +7,7 @@
 .form__field {
   font-family: $title-font;
   color: $color-text-description;
+  text-transform: uppercase;
 
   @include text-size(16px, 18px, 400);
 }
@@ -14,12 +15,14 @@
 .form__field-radio {
   font-family: $title-font;
   color: $color-text-title-card;
+  text-transform: uppercase;
 
   @include text-size(16px, 18px, 400);
 }
 
 .form__field-check {
   font-family: $title-font;
+  text-transform: uppercase;
 
   @include text-size(16px, 18px, 400);
 }
@@ -27,6 +30,7 @@
 .form__control {
   font-family: $title-font;
   color: $color-text-description;
+  text-transform: uppercase;
 
   @include text-size(16px, 18px, 400);
 }

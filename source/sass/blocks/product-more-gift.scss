@@ -1,6 +1,7 @@
 .product-more-gift {
-  height: 290px;
-  background-image: url("/source/img/gift-bg.jpg");
+  min-height: 290px;
+  background-image: url("../img/gift-bg.jpg");
+  background-color: $color-bg-img;
   background-repeat: no-repeat;
   background-size: 280px 290px;
 }

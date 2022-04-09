@@ -1,11 +1,14 @@
 .main-inner-container__title {
+  margin-left: 20px;
   font-family: $title-font;
 
   @include text-size(36px, 36px, 400);
 }
 
 .main-inner-container__description {
+  margin-left: 20px;
   font-family: $title-font;
+  text-transform: uppercase;
 
   @include text-size(14px, 18px, 400);
 }
