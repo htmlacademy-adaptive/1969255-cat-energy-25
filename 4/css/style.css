@@ -35,7 +35,7 @@ img {
   height: 100%;
 }
 
-.page-body {
+.page__body {
   min-height: 100%;
   margin: 0;
   background-color: #ffffff;
@@ -50,18 +50,48 @@ img {
   font-weight: 500;
 }
 
+.main-header__logo {
+  margin: 0 20px;
+}
+
+.main-nav__wrapper {
+  width: 280px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .cat-nutrition {
-  min-height: 480px;
-  background-image: url("/source/img/index-background-mob.jpg");
+  min-height: 302px;
+  background-image: url("../img/index-background-mob.jpg");
   background-color: #68b738;
   background-repeat: no-repeat;
   background-size: 320px 302px;
   object-fit: contain;
 }
 
+.cat-nutrition__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
 .cat-nutrition__title {
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
+  text-align: center;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -70,6 +100,8 @@ img {
 .cat-nutrition__description {
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -79,6 +111,8 @@ img {
   background-color: #68b738;
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -98,6 +132,17 @@ img {
   font-weight: 400;
 }
 
+.programm-cards__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.programm-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .cards-item {
   background-color: #f2f2f2;
 }
@@ -105,6 +150,7 @@ img {
 .cards-item__title {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -121,9 +167,16 @@ img {
 .cards-item__link {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+}
+
+.about-programm__wrapper {
+  width: 280px;
+  margin: 0 20px;
 }
 
 .about-programm__title {
@@ -131,6 +184,12 @@ img {
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+}
+
+.about-programm__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .about-programm__item {
@@ -143,6 +202,11 @@ img {
 
 .example {
   background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  width: 280px;
+  margin: 0 20px;
 }
 
 .example__title {
@@ -161,9 +225,14 @@ img {
   font-weight: 400;
 }
 
+.example__stats-list {
+  list-style: none;
+}
+
 .example__stats-item-value {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -172,6 +241,7 @@ img {
 .example__stats-item-description {
   font-family: "Arial", sans-serif;
   color: #444444;
+  text-transform: lowercase;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -180,26 +250,35 @@ img {
 .example__stats-description {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
 
-.slider-toggle {
+.slider__toggle {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
 }
 
-.main-footer__container {
+.main-footer__wrapper {
+  width: 280px;
+  margin: 0 20px;
   background-color: #f2f2f2;
+}
+
+.address--absolute {
+  background-color: #ffffff;
 }
 
 .address__title {
   font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -213,11 +292,20 @@ img {
   font-weight: 400;
 }
 
-.address-inner {
-  background-color: #f2f2f2;
+.social__list {
+  list-style: none;
+}
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__text {
+  color: #444444;
 }
 
 .main-inner-container__title {
+  margin-left: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -225,15 +313,33 @@ img {
 }
 
 .main-inner-container__description {
+  margin-left: 20px;
   font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 }
 
+.product-cards__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.product-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
 .product-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -260,6 +366,11 @@ img {
   font-weight: 400;
 }
 
+.product-more__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
 .product-more__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -267,9 +378,16 @@ img {
   font-weight: 400;
 }
 
+.product-more__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .additional-product__title {
   font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -284,8 +402,9 @@ img {
 }
 
 .product-more-gift {
-  height: 290px;
-  background-image: url("/source/img/gift-bg.jpg");
+  min-height: 290px;
+  background-image: url("../img/gift-bg.jpg");
+  background-color: #68b738;
   background-repeat: no-repeat;
   background-size: 280px 290px;
 }
@@ -296,6 +415,11 @@ img {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.section-form__wrapper {
+  width: 280px;
+  margin: 0 20px;
 }
 
 .section-form__text {
@@ -315,6 +439,7 @@ img {
 .form__field {
   font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -323,6 +448,7 @@ img {
 .form__field-radio {
   font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -330,6 +456,7 @@ img {
 
 .form__field-check {
   font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -338,6 +465,7 @@ img {
 .form__control {
   font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
