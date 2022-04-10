@@ -1,0 +1,30 @@
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-family: $title-font;
+  color: $color-text-title-card;
+  text-transform: uppercase;
+
+  @include text-size(16px, 20px, 400);
+}
+
+.product-card__title--more {
+  color: $color-text-title-map;
+}
+
+.product-card__description-list-name,
+.product-card__description-list-value {
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(12px, 16px, 400);
+}
+
+.product-card__description {
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(12px, 16px, 400);
+}

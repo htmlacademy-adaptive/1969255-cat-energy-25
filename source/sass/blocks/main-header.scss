@@ -1,0 +1,9 @@
+.main-header {
+  font-family: $title-font;
+
+  @include text-size(20px, 20px, 500);
+}
+
+.main-header__logo {
+  margin: 0 20px;
+}

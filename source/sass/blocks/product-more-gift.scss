@@ -1,0 +1,14 @@
+.product-more-gift {
+  min-height: 290px;
+  background-image: url("../img/gift-bg.jpg");
+  background-color: $color-bg-img;
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
+}
+
+.product-more-gift__description {
+  font-family: $main-font;
+  color: $color-text-second;
+
+  @include text-size(16px, 20px, 400);
+}

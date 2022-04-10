@@ -1,0 +1,10 @@
+.section-form__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.section-form__text {
+  font-family: $main-font;
+
+  @include text-size(14px, 16px, 400);
+}

@@ -1,0 +1,24 @@
+.about-programm__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.about-programm__title {
+  font-family: $title-font;
+
+  @include text-size(36px, 40px, 400);
+}
+
+.about-programm__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-programm__item {
+  font-family: $main-font;
+  color: $color-text-description;
+
+  @include text-size(14px, 18px, 400);
+}
+
