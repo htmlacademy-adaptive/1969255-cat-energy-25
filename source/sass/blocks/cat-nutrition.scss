@@ -4,12 +4,13 @@
   background-color: $color-bg-img;
   background-repeat: no-repeat;
   background-size: 320px 302px;
+  background-position: center;
   object-fit: contain;
 }
 
 .cat-nutrition__wrapper {
   width: 280px;
-  margin: 0 20px;
+  margin: 0 auto;
 }
 
 .cat-nutrition__title {
@@ -27,4 +28,37 @@
   text-align: center;
 
   @include text-size(14px, 14px, 400);
+}
+
+
+@media (min-width: $tablet-width) {
+  .cat-nutrition {
+    background-image: none;
+    background-color: $color-bg-main;
+  }
+
+  .cat-nutrition__wrapper {
+    width: 420px;
+    margin-left: 117px;
+  }
+
+  .cat-nutrition__title {
+    color: $color-text;
+    text-align: start;
+
+    @include text-size(60px, 60px, 400);
+  }
+
+  .cat-nutrition__description {
+    color: $color-text;
+    text-align: start;
+
+    @include text-size(20px, 20px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-nutrition__wrapper {
+    margin-left: 190px;
+  }
 }

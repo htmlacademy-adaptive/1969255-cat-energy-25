@@ -16,4 +16,36 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: $title-font;
+
+  @include text-size(20px, 20px, 500);
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    min-width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    @include text-size(18px, 24px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    min-width: 478px;
+  }
+
+  .main-nav__link {
+    @include text-size(20px, 30px, 400);
+  }
 }
