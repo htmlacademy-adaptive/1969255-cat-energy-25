@@ -1,0 +1,820 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Arial", sans-serif;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  height: 38px;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .main-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .main-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+}
+.main-nav__wrapper {
+  width: 280px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    min-width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav__wrapper {
+    min-width: 478px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+.cat-nutrition {
+  min-height: 302px;
+  background-image: url("../img/index-background-mob.jpg");
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: center;
+  object-fit: contain;
+}
+
+.cat-nutrition__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.cat-nutrition__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.cat-nutrition__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .cat-nutrition {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .cat-nutrition__wrapper {
+    width: 420px;
+    margin-left: 117px;
+  }
+
+  .cat-nutrition__title {
+    color: #000000;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  .cat-nutrition__description {
+    color: #000000;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .cat-nutrition__wrapper {
+    margin-left: 190px;
+  }
+}
+.button {
+  display: block;
+  padding: 7px 44px;
+  background-color: #68b738;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.button--primary {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.button--secondary {
+  background-color: #f2f2f2;
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 244px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+.programm-cards__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.programm-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .programm-cards__wrapper {
+    width: 708px;
+  }
+}
+@media (min-width: 1440px) {
+  .programm-cards__wrapper {
+    width: 1220px;
+  }
+
+  .programm-cards__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.cards-item {
+  background-color: #f2f2f2;
+}
+
+.cards-item__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.cards-item__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.cards-item__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .cards-item__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  .cards-item__description {
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .cards-item__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .cards-item {
+    width: 570px;
+  }
+}
+.about-programm__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about-programm__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.about-programm__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-programm__item {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .about-programm__wrapper {
+    width: 708px;
+  }
+
+  .about-programm__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  .about-programm__list {
+    display: grid;
+    grid-template-columns: 245px 245px;
+    grid-template-rows: 280px 280px;
+    row-gap: 37px;
+    column-gap: 138px;
+  }
+
+  .about-programm__item {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .about-programm__wrapper {
+    width: 1220px;
+  }
+
+  .about-programm__list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 280px;
+    column-gap: 80px;
+  }
+}
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.example__stats-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.example__stats-item {
+  width: 124px;
+}
+
+.example__stats-item-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.example__stats-item-description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.example__stats-description {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .example__wrapper {
+    width: 708px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .example__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__stats-list {
+    width: 366px;
+    justify-content: space-between;
+  }
+
+  .example__stats-item {
+    width: 162px;
+  }
+
+  .example__stats-item-value {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+
+  .example__stats-item-description {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+
+  .example__stats-description {
+    width: 174px;
+    text-align: end;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .example__wrapper {
+    width: 1220px;
+    min-height: 576px;
+    display: grid;
+    grid-template-columns: 592px 592px;
+    column-gap: 38px;
+  }
+
+  .example__stats {
+    flex-direction: column;
+  }
+
+  .example__stats-description {
+    width: 327px;
+    text-align: start;
+  }
+}
+.slider__toggles {
+  text-align: center;
+}
+
+.slider__toggle {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .slider__image {
+    display: block;
+    width: 592px;
+    height: 511px;
+    margin: 0 auto;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+.main-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-footer__contacts {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .main-footer__wrapper {
+    width: 708px;
+  }
+
+  .main-footer__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .main-footer__wrapper {
+    width: 1220px;
+  }
+}
+.address {
+  display: grid;
+  grid-template-columns: 139px 139px;
+  column-gap: 2px;
+  background-color: #ffffff;
+}
+
+.address__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.address__text {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .address {
+    width: 628px;
+    margin: 0 auto;
+    grid-template-columns: 172px 172px;
+    column-gap: 294px;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  .address__text {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .address {
+    width: 565px;
+    grid-template-columns: 163px 163px;
+    column-gap: 80px;
+  }
+
+  .address__text {
+    text-align: start;
+  }
+}
+.map__frame {
+  height: 360px;
+  margin: 0;
+}
+
+.social__list {
+  list-style: none;
+}
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__text {
+  color: #444444;
+}
+
+.main-inner-container__title {
+  margin-left: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.main-inner-container__description {
+  margin-left: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.product-cards__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.product-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.product-card__title--more {
+  color: #111111;
+}
+
+.product-card__description-list-name,
+.product-card__description-list-value {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.product-card__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.product-more__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.product-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.product-more__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-product__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.additional-product__description-list {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.product-more-gift {
+  min-height: 290px;
+  background-image: url("../img/gift-bg.jpg");
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
+}
+
+.product-more-gift__description {
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.section-form__wrapper {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.section-form__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.form__legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.form__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.form__field-radio {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.form__field-check {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.form__control {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
