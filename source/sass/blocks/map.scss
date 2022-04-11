@@ -1,4 +1,14 @@
+.map {
+  position: relative;
+}
+
 .map__frame {
   height: 360px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    height: 400px;
+  }
 }

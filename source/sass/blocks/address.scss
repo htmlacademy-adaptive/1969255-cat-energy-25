@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 139px 139px;
   column-gap: 2px;
-  background-color: $color-bg-main;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .address__title {
@@ -44,6 +45,7 @@
     width: 565px;
     grid-template-columns: 163px 163px;
     column-gap: 80px;
+    background-color: $color-bg-main;
   }
 
   .address__text {
