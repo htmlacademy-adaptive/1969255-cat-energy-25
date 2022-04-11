@@ -1,4 +1,7 @@
-.address--absolute {
+.address {
+  display: grid;
+  grid-template-columns: 139px 139px;
+  column-gap: 2px;
   background-color: $color-bg-main;
 }
 
@@ -15,4 +18,35 @@
   color: $color-text-description;
 
   @include text-size(14px, 20px, 400);
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    width: 628px;
+    margin: 0 auto;
+    grid-template-columns: 172px 172px;
+    column-gap: 294px;
+  }
+
+  .address__title {
+    @include text-size(20px, 26px, 400);
+  }
+
+  .address__text {
+    text-align: end;
+
+    @include text-size(16px, 20px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    width: 565px;
+    grid-template-columns: 163px 163px;
+    column-gap: 80px;
+  }
+
+  .address__text {
+    text-align: start;
+  }
 }

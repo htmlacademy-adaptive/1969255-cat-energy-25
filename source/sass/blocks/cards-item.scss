@@ -25,3 +25,26 @@
 
   @include text-size(16px, 16px, 400);
 }
+
+
+@media (min-width: $tablet-width) {
+  .cards-item__title {
+    @include text-size(36px, 36px, 400);
+  }
+
+  .cards-item__description {
+    color: $color-text;
+
+    @include text-size(16px, 24px, 400);
+  }
+
+  .cards-item__link {
+    @include text-size(20px, 30px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards-item {
+    width: 570px;
+  }
+}

@@ -1,10 +1,28 @@
 .programm-cards__wrapper {
   width: 280px;
-  margin: 0 20px;
+  margin: 0 auto;
 }
 
 .programm-cards__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .programm-cards__wrapper {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-cards__wrapper {
+    width: 1220px;
+  }
+
+  .programm-cards__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

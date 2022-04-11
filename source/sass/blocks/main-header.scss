@@ -1,9 +1,38 @@
 .main-header {
-  font-family: $title-font;
-
-  @include text-size(20px, 20px, 500);
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main-header__logo {
-  margin: 0 20px;
+  height: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  // добавил высоту и ширину лого для наглядности
+  .main-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  // добавил высоту и ширину лого для наглядности
+  .main-header__logo {
+    width: 202px;
+    height: 59px;
+  }
 }
