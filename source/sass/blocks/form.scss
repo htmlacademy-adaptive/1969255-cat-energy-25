@@ -1,4 +1,11 @@
+.form__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form__legend {
+  width: 280px;
+  margin: 0 auto;
   font-family: $title-font;
 
   @include text-size(24px, 26px, 400);
@@ -28,6 +35,11 @@
   @include text-size(16px, 18px, 400);
 }
 
+.form__control-textarea {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form__button {
   width: 280px;
   margin: 0 auto;
@@ -38,10 +50,36 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  border: none;
+}
+
+.form__fieldset-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__checkbox-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 178px;
+}
+
+.form__button-wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .form__container {
+    width: 708px;
+  }
+
   .form__legend {
+    width: 708px;
+
     @include text-size(36px, 36px, 400);
   }
 
@@ -53,13 +91,22 @@
     @include text-size(20px, 30px, 400);
   }
 
+  .form__control-textarea {
+    width: 708px;
+  }
+
+  .form__fieldset-wrapper {
+    width: 708px;
+  }
+
   .form__checkbox-wrapper {
-    display: grid;
+    width: 708px;
     grid-template-columns: 282px 282px;
     column-gap: 61px;
   }
 
   .form__button-wrapper {
+    width: 708px;
     display: grid;
     grid-template-columns: 282px 282px;
     column-gap: 61px;
@@ -72,23 +119,35 @@
 
 @media (min-width: $desktop-width) {
   .form__container {
+    width: 1220px;
     display: grid;
     grid-template-columns: 568px 568px;
     column-gap: 80px;
   }
 
-  .form__fieldset-contacts {
+  .form__legend {
+    width: 1220px;
+  }
+
+  .form__fieldset-wrapper {
+    width: 1220px;
     display: grid;
     grid-template-columns: 568px 568px;
     column-gap: 80px;
+  }
+
+  .form__control-textarea {
+    width: 1220px;
   }
 
   .form__checkbox-wrapper {
+    width: 1220px;
     grid-template-columns: 244px 244px 244px 244px;
     column-gap: 80px;
   }
 
   .form__button-wrapper {
+    width: 1220px;
     grid-template-columns: 568px 568px;
     column-gap: 80px;
   }

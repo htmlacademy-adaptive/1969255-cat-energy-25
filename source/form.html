@@ -36,7 +36,6 @@
           <p class="main-inner-container__description">Заполните анкету, и мы подберем<br>
             программу питания для вашего кота</p>
       <section class="section-form">
-        <div class="section-form__wrapper">
           <h2 class="visually-hidden">Форма для подбора программы</h2>
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__container">
@@ -52,15 +51,18 @@
                 <label class="form__field form__field-radio"><input class="form__radio" type="radio" name="programm-type" value="undecided">Не знаю (Нужен ваш совет)</label>
               </fieldset>
             </div>
+
             <fieldset class="form__fieldset form__fieldset-contacts">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <label class="form__field">E-mail:*<input class="form__control form__control-contacts" type="email" placeholder="kuklachev@gmail.com" name="email" required></label>
-              <label class="form__field">Телефон:*<input class="form__control form__control-contacts" type="tel" placeholder="8 (960) 900-60-90" name="phone" required></label>
+              <div class="form__fieldset-wrapper">
+                <label class="form__field">E-mail:*<input class="form__control form__control-contacts" type="email" placeholder="kuklachev@gmail.com" name="email" required></label>
+                <label class="form__field">Телефон:*<input class="form__control form__control-contacts" type="tel" placeholder="8 (960) 900-60-90" name="phone" required></label>
+              </div>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset-comments">
               <legend class="form__legend">Комментарий</legend>
-              <textarea class="form__control" placeholder="Расскажите обо всех повадках кота" name="cat-info"></textarea>
+              <textarea class="form__control form__control-textarea" placeholder="Расскажите обо всех повадках кота" name="cat-info"></textarea>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset-checkbox">
@@ -78,7 +80,7 @@
               <p class="section-form__text">* — Обязательные поля</p>
             </div>
           </form>
-        </div>
+
       </section>
       <section class="map">
         <div class="map__container address">
