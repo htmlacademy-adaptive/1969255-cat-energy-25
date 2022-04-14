@@ -7,8 +7,26 @@
 }
 
 .product-more-gift__description {
+  text-align: center;
   font-family: $main-font;
   color: $color-text-second;
 
   @include text-size(16px, 20px, 400);
+}
+
+@media (min-width: $tablet-width) {
+  .product-more-gift {
+    width: 708px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-more-gift {
+    width: 245px;
+    min-height: 289px;
+    background-position: center;
+  }
 }

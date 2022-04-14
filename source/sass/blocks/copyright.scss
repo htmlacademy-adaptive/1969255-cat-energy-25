@@ -1,7 +1,20 @@
+.copyright {
+  width: 280px;
+}
+
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+  fill: #666666;
 }
 
 .copyright__text {
   color: $color-text-description;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 163px;
+  }
 }

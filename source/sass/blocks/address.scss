@@ -1,11 +1,12 @@
 .address {
-  display: grid;
-  grid-template-columns: 139px 139px;
-  column-gap: 2px;
-  background-color: $color-bg-main;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .address__title {
+  width: 139px;
   font-family: $title-font;
   color: $color-text-title-map;
   text-transform: uppercase;
@@ -14,6 +15,7 @@
 }
 
 .address__text {
+  width: 139px;
   font-family: $main-font;
   color: $color-text-description;
 
@@ -23,16 +25,16 @@
 @media (min-width: $tablet-width) {
   .address {
     width: 628px;
-    margin: 0 auto;
-    grid-template-columns: 172px 172px;
-    column-gap: 294px;
   }
 
   .address__title {
+    width: 172px;
+
     @include text-size(20px, 26px, 400);
   }
 
   .address__text {
+    width: 162px;
     text-align: end;
 
     @include text-size(16px, 20px, 400);
@@ -42,11 +44,15 @@
 @media (min-width: $desktop-width) {
   .address {
     width: 565px;
-    grid-template-columns: 163px 163px;
-    column-gap: 80px;
+    background-color: $color-bg-main;
+  }
+
+  .address__title {
+    width: 163px;
   }
 
   .address__text {
+    width: 155px;
     text-align: start;
   }
 }
