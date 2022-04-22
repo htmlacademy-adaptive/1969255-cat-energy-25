@@ -5,9 +5,11 @@
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .example__title {
+  padding-top: 25px;
   font-family: $title-font;
   color: $color-text;
 
@@ -15,10 +17,17 @@
 }
 
 .example__description {
+  margin: 0;
+  margin-top: 40px;
   font-family: $main-font;
   color: $color-text-description;
 
   @include text-size(14px, 18px, 400);
+}
+
+.example__stats {
+  margin: 0;
+  margin-top: 20px;
 }
 
 .example__stats-list {
@@ -26,33 +35,55 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
 .example__stats-item {
-  width: 124px;
+  position: relative;
 }
 
 .example__stats-item-value {
+  width: 124px;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 17px;
   font-family: $title-font;
   color: $color-text;
   text-transform: uppercase;
-  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
   @include text-size(24px, 24px, 400);
+
+  &--weight {
+    padding-left: 41px;
+    padding-right: 42px;
+  }
+
+  &--time {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .example__stats-item-description {
+  position: absolute;
+  top: 32px;
+  left: 17px;
+  width: 87px;
+  padding: 0 10px;
   font-family: $main-font;
   color: $color-text-description;
   text-transform: lowercase;
   text-align: center;
+  background-color: $color-bg-second;
 
   @include text-size(12px, 12px, 400);
 }
 
 .example__stats-description {
+  margin-top: 34px;
   font-family: $title-font;
   color: $color-text;
   text-transform: uppercase;
@@ -61,20 +92,37 @@
   @include text-size(14px, 20px, 400);
 }
 
+.example__slider {
+  margin: 0;
+  margin-top: 40px;
+}
+
 @media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient($color-bg-main 619px, $color-bg-second 619px);
+  }
+
   .example__wrapper {
     width: 708px;
+    padding-bottom: 56px;
   }
 
   .example__title {
+    margin: 0;
+    padding-top: 43px;
+
     @include text-size(60px, 60px, 400);
   }
 
   .example__description {
+    margin-top: 65px;
+    padding-right: 6px;
+
     @include text-size(16px, 24px, 400);
   }
 
   .example__stats {
+    margin-top: 54px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,28 +133,64 @@
     justify-content: space-between;
   }
 
-  .example__stats-item {
-    width: 162px;
-  }
-
   .example__stats-item-value {
+    width: 164px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
     @include text-size(30px, 37px, 400);
+
+    &--weight {
+      padding-left: 57px;
+      padding-right: 56px;
+    }
+
+    &--time {
+      padding-left: 31px;
+      padding-right: 29px;
+    }
   }
 
   .example__stats-item-description {
+    top: 50px;
+    left: 17px;
+    width: 125px;
+    padding: 0 6px;
+    background-color: $color-bg-main;
+
     @include text-size(14px, 14px, 400);
+
+    &--time {
+      width: 131px;
+      padding: 0 2px;
+    }
   }
 
   .example__stats-description {
     width: 174px;
+    margin-top: 10px;
     text-align: end;
 
     @include text-size(20px, 20px, 400);
   }
+
+  .example__stats-description-insert {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .example__slider {
+    margin-top: 80px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient($color-bg-main 205px, $color-bg-second 205px);
+  }
+
   .example__wrapper {
+    margin-top: 0;
     width: 1220px;
     min-height: 576px;
     display: grid;
@@ -114,12 +198,37 @@
     column-gap: 38px;
   }
 
+  .example__title {
+    padding-top: 69px;
+  }
+
+  .example__description {
+    margin-top: 145px;
+    padding-right: 160px;
+    top: 53px;
+  }
+
   .example__stats {
     flex-direction: column;
+    margin-top: 64px;
+  }
+
+  .example__stats-item-description {
+    background-color: $color-bg-second;
   }
 
   .example__stats-description {
-    width: 327px;
+    width: 329px;
+    margin-top: 60px;
     text-align: start;
+  }
+
+  .example__stats-description-insert {
+    display: inline;
+    padding-left: 63px;
+  }
+
+  .example__slider {
+    margin-top: 26px;
   }
 }

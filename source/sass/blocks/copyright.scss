@@ -7,9 +7,20 @@
   justify-content: space-between;
   text-decoration: none;
   fill: #666666;
+
+  &:hover,
+  &:active {
+    fill: $color-bg-btn;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
+  margin: 0;
+  margin-top: 6px;
   color: $color-text-description;
 }
 

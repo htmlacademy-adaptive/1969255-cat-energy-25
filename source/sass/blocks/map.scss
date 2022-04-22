@@ -1,5 +1,12 @@
 .map {
   position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.map__container {
+  margin-top: 30px;
+  margin-bottom: 26px;
 }
 
 .map__frame {
@@ -8,7 +15,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map__container {
+    margin-top: 64px;
+    margin-bottom: 56px;
+  }
+
   .map__frame {
     height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__container {
+    position: absolute;
+    top: 34px;
+    left: 110px;
+    width: 565px;
+    min-height: 198px;
+    padding: 56px 80px;
   }
 }

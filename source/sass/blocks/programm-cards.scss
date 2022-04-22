@@ -9,9 +9,21 @@
   list-style: none;
 }
 
+.programm-cards__item {
+  margin-top: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .programm-cards__wrapper {
     width: 708px;
+  }
+
+  .programm-cards__item {
+    margin: 0;
+
+    &--pro {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -24,5 +36,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .programm-cards__item {
+    margin-top: 82px;
   }
 }

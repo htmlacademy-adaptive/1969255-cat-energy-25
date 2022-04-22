@@ -1,4 +1,15 @@
+.slider__image-medium {
+  display: none;
+}
+
 .slider__toggles {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 35px;
   text-align: center;
 }
 
@@ -6,8 +17,35 @@
   font-family: $title-font;
   color: $color-text;
   text-transform: uppercase;
+  border: none;
+  background-color: none;
 
   @include text-size(16px, 20px, 400);
+}
+
+.slider__switch {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 36px 36px;
+  width: 86px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-bg-main;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+}
+
+.slider__control {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  top: 2px;
+  left: 5px;
+  background-color: $color-bg-btn;
+  border: none;
+  border-radius: 6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,7 +56,65 @@
     margin: 0 auto;
   }
 
+  .slider__image-before {
+    display: none;
+  }
+
+  .slider__toggles {
+    margin-top: 28px;
+    margin-left: 59px;
+    width: 592px;
+  }
+
+  .slider__switch {
+    margin: 0;
+    width: 426px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
+
   .slider__toggle {
+    margin: 0 10px;
+    padding: 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+
     @include text-size(20px, 30px, 400);
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+
+  .slider__control {
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    left: 196px;
+    background: radial-gradient($color-bg-btn 4px, $color-bg-main 4px);
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border-color: #68b738;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    margin-top: 25px;
+    margin-left: 0;
   }
 }

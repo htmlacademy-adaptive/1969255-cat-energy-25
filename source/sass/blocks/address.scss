@@ -7,6 +7,7 @@
 
 .address__title {
   width: 139px;
+  margin: 0;
   font-family: $title-font;
   color: $color-text-title-map;
   text-transform: uppercase;
@@ -16,6 +17,7 @@
 
 .address__text {
   width: 139px;
+  margin: 0;
   font-family: $main-font;
   color: $color-text-description;
 
