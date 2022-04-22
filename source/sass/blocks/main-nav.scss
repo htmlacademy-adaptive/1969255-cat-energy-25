@@ -163,15 +163,13 @@
     margin-top: 61px;
     padding-top: 8px;
     padding-bottom: 8px;
+  }
 
-    &--current-secondary {
+  .main-nav__item-secondary {
+    color: $color-text-second;
+
+    &--current {
       &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
         background: $color-bg-main;
       }
     }
@@ -179,9 +177,5 @@
 
   .main-nav__link {
     @include text-size(20px, 30px, 400);
-
-    &--secondary {
-      color: $color-text-second;
-    }
   }
 }
