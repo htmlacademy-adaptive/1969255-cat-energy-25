@@ -8,7 +8,7 @@
     <base href="https://htmlacademy-adaptive.github.io/1969255-cat-energy-25/7/">
 </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--index">
         <a class="main-header__logo" href="#">
           <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи.">
         </a>
@@ -18,13 +18,13 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
+              <li class="main-nav__item main-nav__item--current main-nav__item-secondary main-nav__item-secondary--current">
                 <a class="main-nav__link">Главная</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item-secondary">
                 <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item-secondary">
                 <a class="main-nav__link" href="form.html">Подбор программы</a>
               </li>
             </ul>
@@ -125,11 +125,13 @@
       </section>
 
       <section class="map">
-        <div class="map__container address">
-          <p class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            <span class="address__text-city">Санкт-Петербург</span></p>
+        <div class="map__wrapper">
+          <div class="map__address address">
+            <p class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="address__text">ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+              <span class="address__text-city">Санкт-Петербург</span></p>
+          </div>
         </div>
         <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4c97279e6b529d94e524dfcc10ee84a961e67411f4c217c59a30f3920983b6f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
       </section>

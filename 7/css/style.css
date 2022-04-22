@@ -85,20 +85,23 @@ img {
 }
 @media (min-width: 1440px) {
   .main-header {
-    position: relative;
     width: 1220px;
   }
-  .main-header::after {
+
+  .main-header--index {
+    position: relative;
+  }
+  .main-header--index::after {
     content: "";
     position: absolute;
-    width: 720px;
+    width: 100%;
     height: 694px;
     top: 0;
     left: 50%;
     background-image: url("../img/index-background-desk.jpg");
     background-color: #68b738;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top left;
     background-size: 720px 694px;
     z-index: 1;
   }
@@ -268,12 +271,15 @@ img {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .main-nav__item--current::after {
+
+  .main-nav__item-secondary {
+    color: #ffffff;
+  }
+  .main-nav__item-secondary--current::after {
     background: #ffffff;
   }
 
   .main-nav__link {
-    color: #ffffff;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
@@ -281,12 +287,10 @@ img {
 }
 .cat-nutrition {
   min-height: 302px;
-  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg");
-  background-color: none, #68b738;
+  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg"), linear-gradient(#68b738 303px, #ffffff 303px);
   background-repeat: no-repeat, no-repeat;
-  background-size: 280px 270px, 320px 302px;
-  background-position: center 166px, center 0;
-  object-fit: cover;
+  background-size: 280px 270px, 320px 302px, 100% 100%;
+  background-position: center 166px, center 0, 100% 0;
 }
 
 .cat-nutrition__wrapper {
@@ -360,11 +364,13 @@ img {
 @media (min-width: 1440px) {
   .cat-nutrition {
     position: relative;
+    width: 1060px;
     min-height: 585px;
+    margin: 0 auto;
     background-image: url("../img/index-can-desk.png");
     background-repeat: no-repeat;
     background-size: 552px 499px;
-    background-position: 558px 29px;
+    background-position: 368px 29px;
     background-color: transparent;
     object-fit: contain;
     z-index: 2;
@@ -538,7 +544,7 @@ img {
   content: "";
   position: absolute;
   top: 8px;
-  right: 0;
+  right: 6px;
   width: 24px;
   height: 10px;
   background-image: url("../img/arrow.svg");
@@ -548,7 +554,7 @@ img {
   content: "";
   position: absolute;
   top: 8px;
-  right: -8px;
+  right: -2px;
   width: 32px;
   height: 10px;
   background-image: url("../img/arrow-hover.svg");
@@ -1079,7 +1085,7 @@ img {
   color: #000000;
   text-transform: uppercase;
   border: none;
-  background-color: none;
+  background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1215,35 +1221,24 @@ img {
 @media (min-width: 768px) {
   .main-footer__wrapper {
     width: 708px;
-    padding-top: 58px;
+    min-height: 147px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .main-footer__logo {
-    margin-top: 5px;
+    border-bottom: none;
   }
 
   .main-footer__social {
     margin-left: -6px;
-  }
-
-  .main-footer__copyright {
-    margin: 0;
+    border-bottom: none;
   }
 }
 @media (min-width: 1440px) {
   .main-footer__wrapper {
     width: 1220px;
-    padding-top: 53px;
-  }
-
-  .main-footer__logo {
-    margin-top: 9px;
-  }
-
-  .main-footer__copyright {
-    margin-top: 5px;
   }
 }
 .address {
@@ -1321,7 +1316,7 @@ img {
   padding: 0;
 }
 
-.map__container {
+.map__address {
   margin-top: 30px;
   margin-bottom: 26px;
 }
@@ -1333,7 +1328,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .map__container {
+  .map__address {
     margin-top: 64px;
     margin-bottom: 56px;
   }
@@ -1343,10 +1338,16 @@ img {
   }
 }
 @media (min-width: 1440px) {
-  .map__container {
+  .map__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .map__address {
     position: absolute;
     top: 34px;
-    left: 110px;
+    left: 0;
     width: 565px;
     min-height: 198px;
     padding: 56px 80px;
@@ -1398,7 +1399,7 @@ img {
 
 .copyright__text {
   margin: 0;
-  margin-top: 6px;
+  margin-top: 12px;
   color: #444444;
 }
 
