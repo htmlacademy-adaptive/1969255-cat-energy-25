@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.map__container {
+.map__address {
   margin-top: 30px;
   margin-bottom: 26px;
 }
@@ -16,7 +16,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map__container {
+  .map__address {
     margin-top: 64px;
     margin-bottom: 56px;
   }
@@ -27,10 +27,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .map__container {
+  .map__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .map__address {
     position: absolute;
     top: 34px;
-    left: 110px;
+    left: 0;
     width: 565px;
     min-height: 198px;
     padding: 56px 80px;

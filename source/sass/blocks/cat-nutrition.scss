@@ -1,11 +1,9 @@
 .cat-nutrition {
   min-height: 302px;
-  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg");
-  background-color: none, $color-bg-img;
+  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg"), linear-gradient($color-bg-img 303px, #ffffff 303px);
   background-repeat: no-repeat, no-repeat;
-  background-size: 280px 270px, 320px 302px;
-  background-position: center 166px, center 0;
-  object-fit: cover;
+  background-size: 280px 270px, 320px 302px, 100% 100%;
+  background-position: center 166px, center 0, 100% 0;
 }
 
 .cat-nutrition__wrapper {
@@ -76,11 +74,13 @@
 @media (min-width: $desktop-width) {
   .cat-nutrition {
     position: relative;
+    width: 1060px;
     min-height: 585px;
+    margin: 0 auto;
     background-image: url("../img/index-can-desk.png");
     background-repeat: no-repeat;
     background-size: 552px 499px;
-    background-position: 558px 29px;
+    background-position: 368px 29px;
     background-color: transparent;
     object-fit: contain;
     z-index: 2;

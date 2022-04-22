@@ -18,7 +18,7 @@
   color: $color-text;
   text-transform: uppercase;
   border: none;
-  background-color: none;
+  background-color: transparent;
 
   @include text-size(16px, 20px, 400);
 }

@@ -38,20 +38,23 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    position: relative;
     width: 1220px;
+  }
+
+  .main-header--index {
+    position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      width: 720px;
+      width: 100%;
       height: 694px;
       top: 0;
       left: 50%;
       background-image: url("../img/index-background-desk.jpg");
       background-color: $color-bg-img;
       background-repeat: no-repeat;
-      background-position: top right;
+      background-position: top left;
       background-size: 720px 694px;
       z-index: 1;
     }
