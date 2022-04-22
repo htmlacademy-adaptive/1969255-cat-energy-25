@@ -37,9 +37,15 @@
 
   .address__text {
     width: 162px;
+    margin-top: -3px;
     text-align: end;
 
     @include text-size(16px, 20px, 400);
+  }
+
+  .address__text-city {
+    display: block;
+    margin-top: 18px;
   }
 }
 
