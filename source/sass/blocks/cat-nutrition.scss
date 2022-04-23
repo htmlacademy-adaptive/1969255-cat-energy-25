@@ -1,11 +1,11 @@
 .cat-nutrition {
   min-height: 302px;
-  background-image: url("../img/index-background-mob.jpg");
-  background-color: $color-bg-img;
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
-  background-position: center;
-  object-fit: contain;
+  background-image: url("../img/index-can-mobile.png"),
+    url("../img/index-background-mob.jpg"),
+    linear-gradient($color-bg-img 303px, $color-bg-main 303px);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 280px 270px, 320px 302px, 100% 100%;
+  background-position: center 166px, center 0, 100% 0;
 }
 
 .cat-nutrition__wrapper {
@@ -14,6 +14,8 @@
 }
 
 .cat-nutrition__title {
+  margin: 0;
+  padding-top: 27px;
   font-family: $title-font;
   color: $color-text-second;
   text-align: center;
@@ -22,6 +24,7 @@
 }
 
 .cat-nutrition__description {
+  margin-top: 25px;
   font-family: $title-font;
   color: $color-text-second;
   text-transform: uppercase;
@@ -30,11 +33,17 @@
   @include text-size(14px, 14px, 400);
 }
 
+.cat-nutrition__button {
+  margin-top: 302px;
+}
 
 @media (min-width: $tablet-width) {
   .cat-nutrition {
-    background-image: none;
+    min-height: 872px;
+    background-image: url("../img/index-can-tablet.jpg");
     background-color: $color-bg-main;
+    background-size: 709px 609px;
+    background-position: center bottom;
   }
 
   .cat-nutrition__wrapper {
@@ -42,6 +51,7 @@
   }
 
   .cat-nutrition__title {
+    padding-top: 62px;
     color: $color-text;
     text-align: start;
 
@@ -49,15 +59,44 @@
   }
 
   .cat-nutrition__description {
+    margin-top: 41px;
     color: $color-text;
     text-align: start;
 
     @include text-size(20px, 20px, 400);
   }
+
+  .cat-nutrition__button {
+    min-height: 54px;
+    margin-top: 49px;
+    padding: 17px 26px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .cat-nutrition {
+    position: relative;
+    width: 1060px;
+    min-height: 585px;
+    margin: 0 auto;
+    background-image: url("../img/index-can-desk.png");
+    background-repeat: no-repeat;
+    background-size: 552px 499px;
+    background-position: 368px 29px;
+    background-color: transparent;
+    object-fit: contain;
+    z-index: 2;
+  }
+
   .cat-nutrition__wrapper {
     width: 1060px;
+  }
+
+  .cat-nutrition__title {
+    padding-top: 111px;
+  }
+
+  .cat-nutrition__description {
+    margin-top: 40px;
   }
 }
