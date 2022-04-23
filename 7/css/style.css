@@ -49,7 +49,7 @@ img {
   font-family: "Arial", sans-serif;
 }
 
-.main-header {
+.main-header__wrapper {
   position: relative;
   min-height: 66px;
   display: flex;
@@ -65,7 +65,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .main-header {
+  .main-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 708px;
@@ -84,12 +84,9 @@ img {
   }
 }
 @media (min-width: 1440px) {
-  .main-header {
-    width: 1220px;
-  }
-
   .main-header--index {
     position: relative;
+    width: 100%;
   }
   .main-header--index::after {
     content: "";
@@ -97,19 +94,22 @@ img {
     width: 100%;
     height: 694px;
     top: 0;
-    left: 50%;
-    background-image: url("../img/index-background-desk.jpg");
-    background-color: #68b738;
+    left: 0;
+    background: url("../img/index-background-desk.jpg"), linear-gradient(to right, #ffffff 50%, #63a73a 50%);
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 720px 694px;
+    background-position: right top;
     z-index: 1;
+  }
+
+  .main-header__wrapper {
+    width: 1220px;
   }
 
   .main-header__logo {
     margin-top: 53px;
     width: 202px;
     height: 59px;
+    z-index: 2;
   }
 }
 .main-nav {
@@ -245,7 +245,7 @@ img {
     bottom: 0;
     left: 0;
     height: 2px;
-    background: #68b738;
+    background: #63a73a;
   }
 
   .main-nav__link {
@@ -287,7 +287,7 @@ img {
 }
 .cat-nutrition {
   min-height: 302px;
-  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg"), linear-gradient(#68b738 303px, #ffffff 303px);
+  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg"), linear-gradient(#63a73a 303px, #ffffff 303px);
   background-repeat: no-repeat, no-repeat;
   background-size: 280px 270px, 320px 302px, 100% 100%;
   background-position: center 166px, center 0, 100% 0;
@@ -690,7 +690,7 @@ img {
   left: 0;
   width: 60px;
   height: 60px;
-  background-color: #68b738;
+  background-color: #63a73a;
 }
 .about-programm__item::after {
   position: absolute;
@@ -1704,7 +1704,7 @@ img {
 .product-more-gift {
   min-height: 290px;
   background-image: url("../img/gift-bg.jpg");
-  background-color: #68b738;
+  background-color: #63a73a;
   background-repeat: no-repeat;
   background-size: 280px 290px;
 }
