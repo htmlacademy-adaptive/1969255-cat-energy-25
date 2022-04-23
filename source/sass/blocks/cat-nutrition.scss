@@ -1,6 +1,8 @@
 .cat-nutrition {
   min-height: 302px;
-  background-image: url("../img/index-can-mobile.png"), url("../img/index-background-mob.jpg"), linear-gradient($color-bg-img 303px, #ffffff 303px);
+  background-image: url("../img/index-can-mobile.png"),
+    url("../img/index-background-mob.jpg"),
+    linear-gradient($color-bg-img 303px, $color-bg-main 303px);
   background-repeat: no-repeat, no-repeat;
   background-size: 280px 270px, 320px 302px, 100% 100%;
   background-position: center 166px, center 0, 100% 0;
