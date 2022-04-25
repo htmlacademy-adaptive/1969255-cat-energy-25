@@ -8,6 +8,7 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  border: none;
 
   @include text-size(14px, 18px, 400);
 
@@ -30,6 +31,15 @@
   color: $color-text-description;
 
   @include text-size(16px, 20px, 400);
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgb(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,6 +1,8 @@
 .main-inner-container__title {
   width: 280px;
   margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 41px;
   font-family: $title-font;
 
   @include text-size(36px, 36px, 400);
@@ -18,6 +20,8 @@
 @media (min-width: $tablet-width) {
   .main-inner-container__title {
     width: 708px;
+    margin-top: 65px;
+    margin-bottom: 82px;
 
     @include text-size(60px, 60px, 400);
   }
@@ -32,6 +36,7 @@
 @media (min-width: $desktop-width) {
   .main-inner-container__title {
     width: 1220px;
+    margin-top: 76px;
   }
 
   .main-inner-container__description {

@@ -7,11 +7,24 @@
 }
 
 .product-more-gift__description {
+  position: relative;
+  margin: 0;
+  padding-top: 187px;
   text-align: center;
   font-family: $main-font;
   color: $color-text-second;
 
   @include text-size(16px, 20px, 400);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 101px;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon_gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +32,17 @@
     width: 708px;
     min-height: 200px;
     background-size: cover;
-    background-position: center;
+    background-position: 0 -325px;
+  }
+
+  .product-more-gift__description {
+    padding-top: 71px;
+    text-align: start;
+    padding-left: 422px;
+
+    &::before {
+      left: 78px;
+    }
   }
 }
 
@@ -28,5 +51,15 @@
     width: 245px;
     min-height: 289px;
     background-position: center;
+  }
+
+  .product-more-gift__description {
+    padding-top: 185px;
+    padding-left: 0;
+    text-align: center;
+
+    &::before {
+      left: 85px;
+    }
   }
 }
