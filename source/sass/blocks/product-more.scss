@@ -6,7 +6,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    top: 13px;
+    top: 40px;
     left: 0;
     background-color: $color-bg-btn;
     z-index: -1;
@@ -48,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .product-more {
     &::before {
-      top: 21px;
+      top: 87px;
     }
   }
 
@@ -82,7 +82,7 @@
 @media (min-width: $desktop-width) {
   .product-more {
     &::before {
-      top: 23px;
+      top: 100px;
     }
   }
 

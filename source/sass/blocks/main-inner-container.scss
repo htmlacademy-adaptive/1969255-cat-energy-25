@@ -1,8 +1,8 @@
 .main-inner-container__title {
   width: 280px;
   margin: 0 auto;
-  margin-top: 27px;
-  margin-bottom: 41px;
+  margin-top: 25px;
+  margin-bottom: 42px;
   font-family: $title-font;
 
   @include text-size(36px, 36px, 400);
@@ -11,6 +11,8 @@
 .main-inner-container__description {
   width: 280px;
   margin: 0 auto;
+  margin-top: -4px;
+  margin-bottom: 39px;
   font-family: $title-font;
   text-transform: uppercase;
 
@@ -24,12 +26,22 @@
     margin-bottom: 82px;
 
     @include text-size(60px, 60px, 400);
+
+    &-form {
+      width: 630px;
+      margin-bottom: 57px;
+    }
   }
 
   .main-inner-container__description {
     width: 708px;
 
     @include text-size(20px, 30px, 400);
+
+    &-form {
+      width: 630px;
+      margin-bottom: 66px;
+    }
   }
 }
 
