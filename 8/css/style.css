@@ -2188,6 +2188,7 @@ img {
 .form__control {
   position: relative;
   width: 100%;
+  height: 45px;
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2247,7 +2248,7 @@ img {
   width: 280px;
   min-height: 150px;
   margin: 0 auto;
-  padding-top: 9px;
+  padding-top: 7px;
 }
 
 .form__control[type=number] {
@@ -2312,7 +2313,7 @@ img {
 }
 
 .form__fieldset-radio {
-  margin-top: 10px;
+  margin-top: 7px;
   border: 1px solid #d9d9d9;
 }
 
@@ -2334,7 +2335,7 @@ img {
 .form__checkbox-wrapper {
   width: 280px;
   margin: 0 auto;
-  margin-top: 34px;
+  margin-top: 32px;
   margin-bottom: 19px;
   display: grid;
   grid-template-columns: 178px;
@@ -2368,18 +2369,22 @@ img {
   }
 
   .form__fieldset-radio-container {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 29px;
   }
 
   .form__fieldset-contacts {
-    margin-top: 78px;
+    margin-top: 77px;
   }
   .form__fieldset-comments {
-    margin-top: 47px;
+    margin-top: 46px;
   }
   .form__fieldset-checkbox {
     margin-top: 65px;
+  }
+
+  .form__input-container {
+    margin-bottom: 20px;
   }
 
   .form__legend-wrapper {
@@ -2444,7 +2449,13 @@ img {
     left: 28px;
   }
 
+  .form__radio[type=radio]:checked + .form__mark-radio::before, .form__radio[type=radio]:checked + .form__mark-radio::after {
+    width: 18px;
+    height: 18px;
+  }
+
   .form__control {
+    height: 52px;
     padding-left: 18px;
     font-size: 20px;
     line-height: 30px;
@@ -2457,6 +2468,7 @@ img {
   .form__control-textarea {
     width: 630px;
     min-height: 174px;
+    padding-top: 9px;
   }
 
   .form__control-icon--email {
@@ -2514,12 +2526,25 @@ img {
     column-gap: 80px;
   }
 
+  .form__input-container {
+    margin-bottom: 23px;
+  }
+  .form__input-container:last-child, .form__input-container-contacts {
+    margin-bottom: 0;
+  }
+
   .form__fieldset-container {
     margin-bottom: 0;
   }
 
   .form__fieldset-contacts {
-    margin-top: 55px;
+    margin-top: 71px;
+  }
+  .form__fieldset-comments {
+    margin-top: 70px;
+  }
+  .form__fieldset-checkbox {
+    margin-top: 67px;
   }
 
   .form__legend-wrapper {
@@ -2549,8 +2574,22 @@ img {
     column-gap: 80px;
   }
 
+  .form__field-radio {
+    margin-top: 22px;
+  }
+
   .form__field-email {
     width: 95px;
+  }
+  .form__field-phone {
+    width: 99px;
+  }
+
+  .form__control {
+    height: 50px;
+  }
+  .form__control-contacts {
+    padding-left: 18.5px;
   }
 
   .form__control-textarea {
