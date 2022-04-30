@@ -1,0 +1,17 @@
+.map-inner {
+  background-color: $color-bg-second;
+}
+
+.map-inner__address {
+  padding-top: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .map-inner {
+    background-color: $color-bg-main;
+  }
+
+  .map-inner__address {
+    padding-top: 58px;
+  }
+}

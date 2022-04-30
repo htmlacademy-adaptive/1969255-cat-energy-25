@@ -1,5 +1,5 @@
 .product-cards__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -28,6 +28,7 @@
 
   .product-cards__list {
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 80px;
+
+    gap: 63px 80px;
   }
 }
