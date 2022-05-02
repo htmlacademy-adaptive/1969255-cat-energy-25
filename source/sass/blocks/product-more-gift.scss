@@ -4,6 +4,10 @@
   background-color: $color-bg-img;
   background-repeat: no-repeat;
   background-size: 280px 290px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-bg@2x.png");
+  }
 }
 
 .product-more-gift__description {
