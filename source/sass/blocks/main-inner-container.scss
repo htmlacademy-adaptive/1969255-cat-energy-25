@@ -27,7 +27,7 @@
 
     @include text-size(60px, 60px, 400);
 
-    &-form {
+    &--form {
       width: 630px;
       margin-bottom: 57px;
     }
@@ -38,7 +38,7 @@
 
     @include text-size(20px, 30px, 400);
 
-    &-form {
+    &--form {
       width: 630px;
       margin-bottom: 66px;
     }

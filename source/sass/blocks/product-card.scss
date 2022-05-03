@@ -32,11 +32,11 @@
 .product-card__image {
   margin-top: 23px;
 
-  &-big {
+  &--big {
     margin-top: 20px;
   }
 
-  &-small {
+  &--small {
     margin-top: 38px;
   }
 }
@@ -152,11 +152,11 @@
   .product-card__image {
     margin-top: 25px;
 
-    &-big {
+    &--big {
       margin-top: 0;
     }
 
-    &-small {
+    &--small {
       margin-top: 23px;
     }
   }

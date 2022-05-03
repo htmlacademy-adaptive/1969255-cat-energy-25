@@ -18,18 +18,18 @@
   @include text-size(24px, 26px, 400);
 }
 
-.form__legend-contacts {
+.form__legend--contacts {
   width: 221px;
   padding-right: 18px;
   margin-bottom: 33px;
 }
 
-.form__legend-comments {
+.form__legend--comments {
   width: 164px;
   margin-bottom: 38px;
 }
 
-.form__legend-additional {
+.form__legend--additional {
   width: 183px;
 }
 
@@ -44,18 +44,18 @@
   @include text-size(16px, 18px, 400);
 }
 
-.form__field-email {
+.form__field--email {
   width: 79px;
   padding-right: 0;
 }
 
-.form__field-radio {
+.form__field--radio {
   margin-bottom: 24px;
   padding-left: 45px;
   color: $color-text-title-card;
 }
 
-.form__field-phone {
+.form__field--phone {
   width: 108px;
   padding-right: 0;
 }
@@ -78,13 +78,13 @@
   }
 }
 
-.form__mark-radio {
+.form__mark--radio {
   top: -5px;
   left: -1px;
   border-radius: 50%;
 }
 
-.form__radio[type="radio"]:checked + .form__mark-radio {
+.form__radio[type="radio"]:checked + .form__mark--radio {
   &::before,
   &::after {
     position: absolute;
@@ -99,7 +99,7 @@
   }
 }
 
-.form__checkbox[type="checkbox"]:checked + .form__mark-check {
+.form__checkbox[type="checkbox"]:checked + .form__mark--check {
   &::before,
   &::after {
     position: absolute;
@@ -118,12 +118,12 @@
   opacity: 0.3;
 }
 
-.form__radio[type="radio"]:disabled + .form__mark-radio,
-.form__checkbox[type="checkbox"]:disabled + .form__mark-check {
+.form__radio[type="radio"]:disabled + .form__mark--radio,
+.form__checkbox[type="checkbox"]:disabled + .form__mark--check {
   opacity: 0.3;
 }
 
-.form__field-check {
+.form__field--check {
   margin-bottom: 13px;
   color: $color-text;
 }
@@ -143,11 +143,11 @@
 
   @include text-size(16px, 18px, 400);
 
-  &-contacts {
+  &--contacts {
     padding-right: 40px;
   }
 
-  &-phone {
+  &--phone {
     padding-left: 16px;
   }
 
@@ -201,7 +201,7 @@
   }
 }
 
-.form__control-textarea {
+.form__control--textarea {
   width: 280px;
   min-height: 150px;
   margin: 0 auto;
@@ -242,9 +242,9 @@
   margin-top: 27px;
 }
 
-.form__fieldset-contacts,
-.form__fieldset-comments,
-.form__fieldset-checkbox {
+.form__fieldset--contacts,
+.form__fieldset--comments,
+.form__fieldset--checkbox {
   position: relative;
 
   &::before {
@@ -259,16 +259,16 @@
   }
 }
 
-.form__fieldset-contacts {
+.form__fieldset--contacts {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.form__fieldset-comments {
+.form__fieldset--comments {
   margin-bottom: 23px;
 }
 
-.form__fieldset-radio {
+.form__fieldset--radio {
   margin-top: 7px;
   border: 1px solid #d9d9d9;
 }
@@ -297,7 +297,7 @@
   grid-template-columns: 178px;
 }
 
-.form__label-check {
+.form__label--check {
   display: block;
   padding-left: 46px;
   padding-top: 5px;
@@ -330,15 +330,15 @@
   }
 
   .form__fieldset {
-    &-contacts {
+    &--contacts {
       margin-top: 77px;
     }
 
-    &-comments {
+    &--comments {
       margin-top: 46px;
     }
 
-    &-checkbox {
+    &--checkbox {
       margin-top: 65px;
     }
   }
@@ -356,30 +356,30 @@
     padding-left: 39px;
     padding-right: 39px;
 
-    &-contacts {
+    &--contacts {
       width: 593px;
       margin-bottom: 75px;
     }
 
-    &-comments {
+    &--comments {
       width: 258px;
       margin-bottom: 76px;
     }
 
-    &-additional {
+    &--additional {
       width: 290px;
     }
 
     @include text-size(36px, 36px, 400);
   }
 
-  .form__fieldset-radio {
+  .form__fieldset--radio {
     margin: 0;
   }
 
-  .form__fieldset-contacts,
-  .form__fieldset-comments,
-  .form__fieldset-checkbox {
+  .form__fieldset--contacts,
+  .form__fieldset--comments,
+  .form__fieldset--checkbox {
     &::before {
       top: 22px;
     }
@@ -388,17 +388,17 @@
   .form__field {
     padding-right: 20px;
 
-    &-radio {
+    &--radio {
       margin: 0;
       margin-top: 21px;
       padding-left: 88px;
     }
 
-    &-email {
+    &--email {
       width: 93px;
     }
 
-    &-check {
+    &--check {
       margin: 0;
     }
 
@@ -410,12 +410,12 @@
     height: 40px;
   }
 
-  .form__mark-radio {
+  .form__mark--radio {
     top: -5px;
     left: 28px;
   }
 
-  .form__radio[type="radio"]:checked + .form__mark-radio {
+  .form__radio[type="radio"]:checked + .form__mark--radio {
     &::before,
     &::after {
       width: 18px;
@@ -429,12 +429,12 @@
 
     @include text-size(20px, 30px, 400);
 
-    &-email {
+    &--email {
       padding-top: 10px;
       padding-bottom: 10px;
     }
 
-    &-textarea {
+    &--textarea {
       width: 630px;
       min-height: 174px;
       padding-top: 9px;
@@ -504,7 +504,7 @@
     margin-bottom: 23px;
 
     &:last-child,
-    &-contacts {
+    &--contacts {
       margin-bottom: 0;
     }
   }
@@ -514,15 +514,15 @@
   }
 
   .form__fieldset {
-    &-contacts {
+    &--contacts {
       margin-top: 71px;
     }
 
-    &-comments {
+    &--comments {
       margin-top: 70px;
     }
 
-    &-checkbox {
+    &--checkbox {
       margin-top: 67px;
     }
   }
@@ -537,15 +537,15 @@
     padding-left: 39px;
     padding-right: 39px;
 
-    &-contacts {
+    &--contacts {
       margin-bottom: 75px;
     }
 
-    &-comments {
+    &--comments {
       width: 262px;
     }
 
-    &-additional {
+    &--additional {
       width: 292px;
     }
   }
@@ -557,16 +557,16 @@
     column-gap: 80px;
   }
 
-  .form__field-radio {
+  .form__field--radio {
     margin-top: 22px;
   }
 
   .form__field {
-    &-email {
+    &--email {
       width: 95px;
     }
 
-    &-phone {
+    &--phone {
       width: 99px;
     }
   }
@@ -574,12 +574,12 @@
   .form__control {
     height: 50px;
 
-    &-contacts {
+    &--contacts {
       padding-left: 18.5px;
     }
   }
 
-  .form__control-textarea {
+  .form__control--textarea {
     width: 1220px;
   }
 
