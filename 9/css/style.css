@@ -409,7 +409,7 @@ img {
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .cat-nutrition {
-    background-image: url("../../img/index-can-desk@2x.png");
+    background-image: url("../img/index-can-desk@2x.png");
   }
 }
 @media (min-width: 1440px) {
@@ -1524,7 +1524,7 @@ img {
     line-height: 60px;
     font-weight: 400;
   }
-  .main-inner-container__title-form {
+  .main-inner-container__title--form {
     width: 630px;
     margin-bottom: 57px;
   }
@@ -1535,7 +1535,7 @@ img {
     line-height: 30px;
     font-weight: 400;
   }
-  .main-inner-container__description-form {
+  .main-inner-container__description--form {
     width: 630px;
     margin-bottom: 66px;
   }
@@ -1615,10 +1615,10 @@ img {
 .product-card__image {
   margin-top: 23px;
 }
-.product-card__image-big {
+.product-card__image--big {
   margin-top: 20px;
 }
-.product-card__image-small {
+.product-card__image--small {
   margin-top: 38px;
 }
 
@@ -1730,10 +1730,10 @@ img {
   .product-card__image {
     margin-top: 25px;
   }
-  .product-card__image-big {
+  .product-card__image--big {
     margin-top: 0;
   }
-  .product-card__image-small {
+  .product-card__image--small {
     margin-top: 23px;
   }
 
@@ -2065,7 +2065,7 @@ img {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-more-gift {
-    background-image: url("../../img/gift-bg@2x.png");
+    background-image: url("../img/gift-bg@2x.png");
   }
 }
 
@@ -2160,18 +2160,18 @@ img {
   font-weight: 400;
 }
 
-.form__legend-contacts {
+.form__legend--contacts {
   width: 221px;
   padding-right: 18px;
   margin-bottom: 33px;
 }
 
-.form__legend-comments {
+.form__legend--comments {
   width: 164px;
   margin-bottom: 38px;
 }
 
-.form__legend-additional {
+.form__legend--additional {
   width: 183px;
 }
 
@@ -2187,18 +2187,18 @@ img {
   font-weight: 400;
 }
 
-.form__field-email {
+.form__field--email {
   width: 79px;
   padding-right: 0;
 }
 
-.form__field-radio {
+.form__field--radio {
   margin-bottom: 24px;
   padding-left: 45px;
   color: #222222;
 }
 
-.form__field-phone {
+.form__field--phone {
   width: 108px;
   padding-right: 0;
 }
@@ -2219,13 +2219,13 @@ img {
   opacity: 0.3;
 }
 
-.form__mark-radio {
+.form__mark--radio {
   top: -5px;
   left: -1px;
   border-radius: 50%;
 }
 
-.form__radio[type=radio]:checked + .form__mark-radio::before, .form__radio[type=radio]:checked + .form__mark-radio::after {
+.form__radio[type=radio]:checked + .form__mark--radio::before, .form__radio[type=radio]:checked + .form__mark--radio::after {
   position: absolute;
   content: "";
   width: 13.5px;
@@ -2237,7 +2237,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.form__checkbox[type=checkbox]:checked + .form__mark-check::before, .form__checkbox[type=checkbox]:checked + .form__mark-check::after {
+.form__checkbox[type=checkbox]:checked + .form__mark--check::before, .form__checkbox[type=checkbox]:checked + .form__mark--check::after {
   position: absolute;
   content: "";
   width: 18px;
@@ -2253,12 +2253,12 @@ img {
   opacity: 0.3;
 }
 
-.form__radio[type=radio]:disabled + .form__mark-radio,
-.form__checkbox[type=checkbox]:disabled + .form__mark-check {
+.form__radio[type=radio]:disabled + .form__mark--radio,
+.form__checkbox[type=checkbox]:disabled + .form__mark--check {
   opacity: 0.3;
 }
 
-.form__field-check {
+.form__field--check {
   margin-bottom: 13px;
   color: #000000;
 }
@@ -2279,10 +2279,10 @@ img {
   line-height: 18px;
   font-weight: 400;
 }
-.form__control-contacts {
+.form__control--contacts {
   padding-right: 40px;
 }
-.form__control-phone {
+.form__control--phone {
   padding-left: 16px;
 }
 .form__control:hover {
@@ -2325,7 +2325,7 @@ img {
   fill: #ff8282;
 }
 
-.form__control-textarea {
+.form__control--textarea {
   width: 280px;
   min-height: 150px;
   margin: 0 auto;
@@ -2366,14 +2366,14 @@ img {
   margin-top: 27px;
 }
 
-.form__fieldset-contacts,
-.form__fieldset-comments,
-.form__fieldset-checkbox {
+.form__fieldset--contacts,
+.form__fieldset--comments,
+.form__fieldset--checkbox {
   position: relative;
 }
-.form__fieldset-contacts::before,
-.form__fieldset-comments::before,
-.form__fieldset-checkbox::before {
+.form__fieldset--contacts::before,
+.form__fieldset--comments::before,
+.form__fieldset--checkbox::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -2384,16 +2384,16 @@ img {
   z-index: -1;
 }
 
-.form__fieldset-contacts {
+.form__fieldset--contacts {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.form__fieldset-comments {
+.form__fieldset--comments {
   margin-bottom: 23px;
 }
 
-.form__fieldset-radio {
+.form__fieldset--radio {
   margin-top: 7px;
   border: 1px solid #d9d9d9;
 }
@@ -2422,7 +2422,7 @@ img {
   grid-template-columns: 178px;
 }
 
-.form__label-check {
+.form__label--check {
   display: block;
   padding-left: 46px;
   padding-top: 5px;
@@ -2454,13 +2454,13 @@ img {
     margin-bottom: 29px;
   }
 
-  .form__fieldset-contacts {
+  .form__fieldset--contacts {
     margin-top: 77px;
   }
-  .form__fieldset-comments {
+  .form__fieldset--comments {
     margin-top: 46px;
   }
-  .form__fieldset-checkbox {
+  .form__fieldset--checkbox {
     margin-top: 65px;
   }
 
@@ -2480,25 +2480,25 @@ img {
     line-height: 36px;
     font-weight: 400;
   }
-  .form__legend-contacts {
+  .form__legend--contacts {
     width: 593px;
     margin-bottom: 75px;
   }
-  .form__legend-comments {
+  .form__legend--comments {
     width: 258px;
     margin-bottom: 76px;
   }
-  .form__legend-additional {
+  .form__legend--additional {
     width: 290px;
   }
 
-  .form__fieldset-radio {
+  .form__fieldset--radio {
     margin: 0;
   }
 
-  .form__fieldset-contacts::before,
-.form__fieldset-comments::before,
-.form__fieldset-checkbox::before {
+  .form__fieldset--contacts::before,
+.form__fieldset--comments::before,
+.form__fieldset--checkbox::before {
     top: 22px;
   }
 
@@ -2508,15 +2508,15 @@ img {
     line-height: 30px;
     font-weight: 400;
   }
-  .form__field-radio {
+  .form__field--radio {
     margin: 0;
     margin-top: 21px;
     padding-left: 88px;
   }
-  .form__field-email {
+  .form__field--email {
     width: 93px;
   }
-  .form__field-check {
+  .form__field--check {
     margin: 0;
   }
 
@@ -2525,12 +2525,12 @@ img {
     height: 40px;
   }
 
-  .form__mark-radio {
+  .form__mark--radio {
     top: -5px;
     left: 28px;
   }
 
-  .form__radio[type=radio]:checked + .form__mark-radio::before, .form__radio[type=radio]:checked + .form__mark-radio::after {
+  .form__radio[type=radio]:checked + .form__mark--radio::before, .form__radio[type=radio]:checked + .form__mark--radio::after {
     width: 18px;
     height: 18px;
   }
@@ -2542,11 +2542,11 @@ img {
     line-height: 30px;
     font-weight: 400;
   }
-  .form__control-email {
+  .form__control--email {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .form__control-textarea {
+  .form__control--textarea {
     width: 630px;
     min-height: 174px;
     padding-top: 9px;
@@ -2610,7 +2610,7 @@ img {
   .form__input-container {
     margin-bottom: 23px;
   }
-  .form__input-container:last-child, .form__input-container-contacts {
+  .form__input-container:last-child, .form__input-container--contacts {
     margin-bottom: 0;
   }
 
@@ -2618,13 +2618,13 @@ img {
     margin-bottom: 0;
   }
 
-  .form__fieldset-contacts {
+  .form__fieldset--contacts {
     margin-top: 71px;
   }
-  .form__fieldset-comments {
+  .form__fieldset--comments {
     margin-top: 70px;
   }
-  .form__fieldset-checkbox {
+  .form__fieldset--checkbox {
     margin-top: 67px;
   }
 
@@ -2638,13 +2638,13 @@ img {
     padding-left: 39px;
     padding-right: 39px;
   }
-  .form__legend-contacts {
+  .form__legend--contacts {
     margin-bottom: 75px;
   }
-  .form__legend-comments {
+  .form__legend--comments {
     width: 262px;
   }
-  .form__legend-additional {
+  .form__legend--additional {
     width: 292px;
   }
 
@@ -2655,25 +2655,25 @@ img {
     column-gap: 80px;
   }
 
-  .form__field-radio {
+  .form__field--radio {
     margin-top: 22px;
   }
 
-  .form__field-email {
+  .form__field--email {
     width: 95px;
   }
-  .form__field-phone {
+  .form__field--phone {
     width: 99px;
   }
 
   .form__control {
     height: 50px;
   }
-  .form__control-contacts {
+  .form__control--contacts {
     padding-left: 18.5px;
   }
 
-  .form__control-textarea {
+  .form__control--textarea {
     width: 1220px;
   }
 
