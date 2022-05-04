@@ -1,7 +1,7 @@
 .main-inner-container__title {
   width: 280px;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 27px;
   margin-bottom: 42px;
   font-family: $title-font;
 
@@ -27,7 +27,7 @@
 
     @include text-size(60px, 60px, 400);
 
-    &-form {
+    &--form {
       width: 630px;
       margin-bottom: 57px;
     }
@@ -38,7 +38,7 @@
 
     @include text-size(20px, 30px, 400);
 
-    &-form {
+    &--form {
       width: 630px;
       margin-bottom: 66px;
     }

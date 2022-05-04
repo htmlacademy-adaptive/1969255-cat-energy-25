@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи.">
+          </picture>
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -34,15 +42,15 @@
     </header>
 
     <main class="main-container main-inner-container">
-      <h1 class="main-inner-container__title main-inner-container__title-form">Подбор программы</h1>
-          <p class="main-inner-container__description main-inner-container__description-form">Заполните анкету, и мы подберем<br>
+      <h1 class="main-inner-container__title main-inner-container__title--form">Подбор программы</h1>
+          <p class="main-inner-container__description main-inner-container__description--form">Заполните анкету, и мы подберем<br>
             программу питания для вашего кота</p>
       <section class="section-form">
           <h2 class="visually-hidden">Форма для подбора программы</h2>
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__container">
               <div class="form__fieldset-container">
-                <fieldset class="form__fieldset form__fieldset-cat">
+                <fieldset class="form__fieldset form__fieldset--cat">
                   <div class="form__input-container">
                     <label class="form__field" for="cat-name">Имя:* </label>
                     <input class="form__control" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
@@ -58,42 +66,42 @@
                 </fieldset>
               </div>
 
-              <fieldset class="form__fieldset form__fieldset-radio">
+              <fieldset class="form__fieldset form__fieldset--radio">
                 <div class="form__fieldset-container form__fieldset-radio-container">
-                <label class="form__field form__field-radio">
+                <label class="form__field form__field--radio">
                   <input class="form__radio visually-hidden" type="radio" name="programm-type" value="weight loss" checked>
-                  <span class="form__mark form__mark-radio"></span>
+                  <span class="form__mark form__mark--radio"></span>
                   <span class="form__label">Похудение</span>
                 </label>
-                <label class="form__field form__field-radio">
+                <label class="form__field form__field--radio">
                   <input class="form__radio visually-hidden" type="radio" name="programm-type" value="weight gain">
-                  <span class="form__mark form__mark-radio"></span>
+                  <span class="form__mark form__mark--radio"></span>
                   <span class="form__label">Набор массы</span>
                 </label>
-                <label class="form__field form__field-radio">
+                <label class="form__field form__field--radio">
                   <input class="form__radio visually-hidden" type="radio" name="programm-type" value="undecided">
-                  <span class="form__mark form__mark-radio"></span>
+                  <span class="form__mark form__mark--radio"></span>
                   <span class="form__label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
               </fieldset>
             </div>
 
-            <fieldset class="form__fieldset form__fieldset-contacts">
+            <fieldset class="form__fieldset form__fieldset--contacts">
               <div class="form__legend-wrapper">
-                <h2 class="form__legend form__legend-contacts">Контактные данные (владельца кота)</h2>
+                <h2 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h2>
               </div>
               <div class="form__fieldset-wrapper">
-                <div class="form__input-container form__input-container-contacts">
-                  <label class="form__field form__field-email" for="email">E-mail:*</label>
-                  <input class="form__control form__control-contacts form__control-email" id="email" type="email" placeholder="kuklachev@gmail.com" name="email" required>
+                <div class="form__input-container form__input-container--contacts">
+                  <label class="form__field form__field--email" for="email">E-mail:*</label>
+                  <input class="form__control form__control--contacts form__control--email" id="email" type="email" placeholder="kuklachev@gmail.com" name="email" required>
                   <svg class="form__control-icon form__control-icon--email" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-width="1.3" d="M1.65 5.85v8M18.65 5.85v8M1 13.2h18M1 1.2h18M18.35 3.03 10 9.53l-8.35-6.5V1.5h16.7v1.53Z"/>
                   </svg>
                 </div>
-                <div class="form__input-container form__input-container-contacts">
-                  <label class="form__field form__field-phone" for="phone">Телефон:*</label>
-                  <input class="form__control form__control-contacts" id="phone" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
+                <div class="form__input-container form__input-container--contacts">
+                  <label class="form__field form__field--phone" for="phone">Телефон:*</label>
+                  <input class="form__control form__control--contacts form__control--phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
                   <svg class="form__control-icon form__control-icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path stroke-width="1.3" d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM8.1 19.79v-6.22a.65.65 0 0 0-.6-.6H3.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H3.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z"/>
                   </svg>
@@ -101,37 +109,37 @@
               </div>
             </fieldset>
 
-            <fieldset class="form__fieldset form__fieldset-comments">
+            <fieldset class="form__fieldset form__fieldset--comments">
               <div class="form__legend-wrapper">
-                <h2 class="form__legend form__legend-comments">Комментарий</h2>
+                <h2 class="form__legend form__legend--comments">Комментарий</h2>
               </div>
-                <textarea class="form__control form__control-textarea" placeholder="Расскажите обо всех повадках кота" name="cat-info"></textarea>
+                <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота" name="cat-info"></textarea>
             </fieldset>
 
-            <fieldset class="form__fieldset form__fieldset-checkbox">
+            <fieldset class="form__fieldset form__fieldset--checkbox">
               <div class="form__legend-wrapper">
-                <h2 class="form__legend form__legend-additional">Дополнительно</h2>
+                <h2 class="form__legend form__legend--additional">Дополнительно</h2>
               </div>
               <div class="form__checkbox-wrapper">
-                <label class="form__field form__field-check">
+                <label class="form__field form__field--check">
                   <input class="form__checkbox visually-hidden" type="checkbox" name="sweetener" checked>
-                  <span class="form__mark form__mark-check"></span>
-                  <span class="form__label form__label-check">Cахарозаменитель</span>
+                  <span class="form__mark form__mark--check"></span>
+                  <span class="form__label form__label--check">Cахарозаменитель</span>
                 </label>
-                <label class="form__field form__field-check">
+                <label class="form__field form__field--check">
                   <input class="form__checkbox visually-hidden" type="checkbox" name="drinking water">
-                  <span class="form__mark form__mark-check"></span>
-                  <span class="form__label form__label-check">Питьевая вода</span>
+                  <span class="form__mark form__mark--check"></span>
+                  <span class="form__label form__label--check">Питьевая вода</span>
                 </label>
-                <label class="form__field form__field-check">
+                <label class="form__field form__field--check">
                   <input class="form__checkbox visually-hidden" type="checkbox" name="milk">
-                  <span class="form__mark form__mark-check"></span>
-                  <span class="form__label form__label-check">Молоко</span>
+                  <span class="form__mark form__mark--check"></span>
+                  <span class="form__label form__label--check">Молоко</span>
                 </label>
-                <label class="form__field form__field-check">
+                <label class="form__field form__field--check">
                   <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins">
-                  <span class="form__mark form__mark-check"></span>
-                  <span class="form__label form__label-check">Витамины</span>
+                  <span class="form__mark form__mark--check"></span>
+                  <span class="form__label form__label--check">Витамины</span>
                 </label>
               </div>
             </fieldset>

@@ -1,6 +1,6 @@
 .main-header__wrapper {
   position: relative;
-  min-height: 66px;
+  min-height: 65px;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -11,7 +11,7 @@
 .main-header__logo {
   margin-left: 20px;
   margin-top: 10px;
-  height: 56px;
+  height: 54px;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,8 +22,8 @@
     border: none;
   }
 
-  // добавил высоту и ширину лого для наглядности
   .main-header__logo {
+    margin-left: 0;
     margin-top: 24px;
     width: 174px;
     height: 52px;
@@ -55,6 +55,13 @@
       background-repeat: no-repeat;
       background-position: right top;
       z-index: 1;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index-background-desk@2x.jpg"),
+          linear-gradient(to right, $color-bg-main 50%, $color-bg-img 50%);
+        background-repeat: no-repeat;
+        background-position: right top;
+      }
     }
   }
 
