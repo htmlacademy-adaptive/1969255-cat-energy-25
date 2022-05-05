@@ -171,13 +171,16 @@
   right: 16px;
 
   &--email {
+    fill: none;
     stroke: #222222;
+    stroke-width: 1.3px;
   }
 
   &--phone {
     top: 13px;
     right: 13px;
     fill: #222222;
+    stroke-width: 1.3px;
   }
 }
 
@@ -469,7 +472,7 @@
     row-gap: 32px;
   }
 
-  .form__label-check {
+  .form__label--check {
     padding-left: 59px;
   }
 
