@@ -211,17 +211,6 @@
   padding-top: 7px;
 }
 
-.form__control[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.form__control::-webkit-outer-spin-button,
-.form__control::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
-  margin: 0;
-}
-
 .form__button {
   width: 280px;
   margin: 0 auto;

@@ -57,6 +57,7 @@
   position: absolute;
   width: 100%;
   background-color: $color-bg-main;
+  z-index: 2;
 }
 
 .main-nav--nojs .main-nav__toggle {
