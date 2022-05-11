@@ -79,6 +79,7 @@
   .cat-nutrition__button {
     min-height: 54px;
     margin-top: 49px;
+    margin-left: 2px;
     padding: 17px 26px;
   }
 }
@@ -112,5 +113,10 @@
 
   .cat-nutrition__description {
     margin-top: 40px;
+  }
+
+  .cat-nutrition__button {
+    margin-top: 52px;
+    margin-left: 0;
   }
 }
