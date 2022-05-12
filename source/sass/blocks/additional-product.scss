@@ -46,13 +46,14 @@
 
   .additional-product__description-list {
     margin: 0;
+    margin-top: 2px;
     margin-left: auto;
 
     @include text-size(16px, 20px, 400);
   }
 
   .additional-product__name {
-    margin-right: 10px;
+    margin-right: 14px;
   }
 
   .additional-product__button {
@@ -81,6 +82,7 @@
 
   .additional-product__wrapper {
     width: 612px;
+    margin-top: 10px;
   }
 
   .additional-product__description-list {
