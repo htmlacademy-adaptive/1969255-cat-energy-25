@@ -1,3 +1,7 @@
+.slider__image {
+  width: inherit;
+}
+
 .slider__toggles {
   width: 210px;
   display: flex;
@@ -47,8 +51,6 @@
 @media (min-width: $tablet-width) {
   .slider__image {
     display: block;
-    width: 592px;
-    height: 511px;
     margin: 0 auto;
   }
 
