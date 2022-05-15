@@ -1,14 +1,13 @@
 .product-card {
   width: 100%;
   border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
 }
 
 .product-card__container {
   width: 280px;
   min-height: 207px;
   margin: 0 auto;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 9px;
   display: grid;
   grid-template-columns: 140px 140px;
@@ -98,7 +97,7 @@
 
 .product-card__button {
   grid-column: 1/-1;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -192,7 +191,7 @@
   .product-card__description-list {
     width: 250px;
     padding-top: 5px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -286,5 +285,10 @@
 
   .product-card__button {
     width: 168px;
+    margin-top: 26px;
+
+    &--secondary {
+      margin-top: 72px;
+    }
   }
 }

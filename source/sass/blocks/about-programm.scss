@@ -85,6 +85,7 @@
 
 .about-programm__description {
   min-height: 54px;
+  width: 199px;
   margin: 0;
   padding: 0;
 }
@@ -173,8 +174,8 @@
     display: block;
     margin: 0;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2px;
+    left: 115px;
     font-family: $title-font;
     color: $color-text-bg;
     z-index: -1;
@@ -187,6 +188,7 @@
   .about-programm__wrapper {
     width: 1220px;
     margin-top: 71px;
+    margin-bottom: 29px;
     min-height: 372px;
     border: none;
   }
@@ -201,12 +203,12 @@
   .about-programm__item {
     margin: 0;
     padding: 0;
-    padding-top: 148px;
+    padding-top: 152px;
 
     @include text-size(16px, 24px, 400);
 
     &::before {
-      top: 37px;
+      top: 40px;
       left: -1px;
       width: 80px;
       height: 80px;

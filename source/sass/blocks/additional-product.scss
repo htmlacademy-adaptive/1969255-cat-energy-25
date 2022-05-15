@@ -1,7 +1,10 @@
 .additional-product {
   padding-top: 13px;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
   border-top: 1px solid #cdcdcd;
+}
+
+.additional-product:last-child {
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -17,6 +20,8 @@
 .additional-product__description-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 14px;
   font-family: $main-font;
   color: $color-text-description;
 
@@ -26,6 +31,7 @@
 @media (min-width: $tablet-width) {
   .additional-product {
     border: 1px solid #cdcdcd;
+    border-bottom: none;
   }
 
   .additional-product__container {
@@ -82,7 +88,7 @@
 
   .additional-product__wrapper {
     width: 612px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .additional-product__description-list {
@@ -93,6 +99,6 @@
   .additional-product__button {
     width: 244px;
     margin-top: 2px;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 }

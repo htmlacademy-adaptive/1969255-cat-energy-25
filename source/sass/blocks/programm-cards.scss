@@ -35,10 +35,11 @@
   .programm-cards__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .programm-cards__item {
-    margin-top: 82px;
+    margin-top: 79px;
   }
 }
