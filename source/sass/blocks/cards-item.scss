@@ -1,5 +1,7 @@
 .cards-item {
   min-height: 266px;
+  padding-top: 30px;
+  padding-bottom: 18px;
   background-color: $color-bg-second;
 }
 
@@ -7,7 +9,6 @@
   position: relative;
   margin: 0;
   padding-left: 91px;
-  padding-top: 30px;
   font-family: $title-font;
   color: $color-text;
   text-transform: uppercase;
@@ -20,7 +21,8 @@
   content: "";
   width: 50px;
   height: 53px;
-  top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 22px;
   background-image: url("../img/cat_slim-mob.svg");
 }
@@ -30,7 +32,8 @@
   content: "";
   width: 67px;
   height: 50px;
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 13px;
   background-image: url("../img/cat_pro-mob.svg");
 }
@@ -39,7 +42,7 @@
   margin: 0 20px;
   margin-bottom: 15px;
   padding-top: 29px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
   font-family: $main-font;
   color: $color-text-description;
@@ -49,10 +52,13 @@
 
 .cards-item__link {
   position: relative;
-  margin: 0 20px;
-  padding-right: 47px;
+  display: block;
   width: 134px;
   min-height: 24px;
+  margin: 0 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 47px;
   font-family: $title-font;
   color: $color-text;
   text-decoration: none;
@@ -63,10 +69,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
     width: 24px;
-    height: 10px;
+    height: 12px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
   }
@@ -94,10 +101,11 @@
 @media (min-width: $tablet-width) {
   .cards-item {
     min-height: 372px;
+    padding-top: 79px;
+    padding-bottom: 18px;
   }
 
   .cards-item__title {
-    padding-top: 79px;
     padding-left: 51px;
     padding-right: 316px;
 
@@ -107,7 +115,8 @@
   .cards-item__title--slim::before {
     width: 200px;
     height: 211px;
-    top: 81px;
+    top: 50%;
+    transform: translateY(-8%);
     left: 446px;
     background-image: url("../img/cat_slim-tab.svg");
   }
@@ -115,7 +124,8 @@
   .cards-item__title--pro::before {
     width: 268px;
     height: 200px;
-    top: 91px;
+    top: 50%;
+    transform: translateY(-3%);
     left: 412px;
     background-image: url("../img/cat_pro-tab.svg");
   }
@@ -123,7 +133,7 @@
   .cards-item__description {
     margin: 0;
     margin-bottom: 48px;
-    padding: 24px 316px 5px 52px;
+    padding: 24px 316px 0 52px;
     border: none;
     color: $color-text;
 
@@ -131,6 +141,7 @@
   }
 
   .cards-item__link {
+    width: 167px;
     margin-left: 52px;
     padding-right: 57px;
     margin-top: 1px;
@@ -143,10 +154,10 @@
   .cards-item {
     width: 570px;
     min-height: 374px;
+    padding-top: 77px;
   }
 
   .cards-item__title {
-    padding-top: 74px;
     padding-left: 214px;
     padding-right: 0;
   }
@@ -154,7 +165,8 @@
   .cards-item__title--slim::before {
     width: 100px;
     height: 106px;
-    top: 38px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 52px;
     background-image: url("../img/cat_slim-desk.svg");
   }
@@ -162,14 +174,15 @@
   .cards-item__title--pro::before {
     width: 134px;
     height: 100px;
-    top: 44px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 33px;
     background-image: url("../img/cat_pro-desk.svg");
   }
 
   .cards-item__description {
     padding: 73px 52px 0 52px;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
   }
 
   .cards-item__link {

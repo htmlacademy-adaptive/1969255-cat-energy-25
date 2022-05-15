@@ -5,11 +5,10 @@
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 44px;
 }
 
 .example__title {
-  padding-top: 25px;
   font-family: $title-font;
   color: $color-text;
 
@@ -35,12 +34,14 @@
   padding: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
 
 .example__stats-item {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .example__stats-item-value {
@@ -69,9 +70,10 @@
 
 .example__stats-item-description {
   position: absolute;
-  top: 32px;
+  bottom: -13px;
   left: 17px;
   width: 87px;
+  margin: 0;
   padding: 0 10px;
   font-family: $main-font;
   color: $color-text-description;
@@ -83,7 +85,7 @@
 }
 
 .example__stats-description {
-  margin-top: 34px;
+  margin-top: 24px;
   font-family: $title-font;
   color: $color-text;
   text-transform: uppercase;
@@ -99,7 +101,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient($color-bg-main 619px, $color-bg-second 619px);
+    background: linear-gradient($color-bg-main 594px, $color-bg-second 594px);
   }
 
   .example__wrapper {
@@ -109,7 +111,7 @@
 
   .example__title {
     margin: 0;
-    padding-top: 43px;
+    padding-top: 18px;
 
     @include text-size(60px, 60px, 400);
   }
@@ -152,7 +154,7 @@
   }
 
   .example__stats-item-description {
-    top: 50px;
+    bottom: -2px;
     left: 17px;
     width: 125px;
     padding: 0 6px;
@@ -180,13 +182,13 @@
   }
 
   .example__slider {
-    margin-top: 80px;
+    margin-top: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient($color-bg-main 205px, $color-bg-second 205px);
+    background: linear-gradient($color-bg-main 28%, $color-bg-second 28%);
   }
 
   .example__wrapper {
@@ -199,7 +201,7 @@
   }
 
   .example__title {
-    padding-top: 69px;
+    padding-top: 41px;
   }
 
   .example__description {
@@ -210,16 +212,17 @@
 
   .example__stats {
     flex-direction: column;
-    margin-top: 64px;
+    margin-top: 69px;
   }
 
   .example__stats-item-description {
     background-color: $color-bg-second;
+    bottom: -4px;
   }
 
   .example__stats-description {
     width: 329px;
-    margin-top: 60px;
+    margin-top: 48px;
     text-align: start;
   }
 
@@ -229,6 +232,6 @@
   }
 
   .example__slider {
-    margin-top: 26px;
+    margin-top: 0;
   }
 }

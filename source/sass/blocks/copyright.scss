@@ -5,6 +5,7 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   fill: #666666;
 
@@ -19,13 +20,17 @@
 }
 
 .copyright__text {
+  width: 240px;
   margin: 0;
-  margin-top: 8px;
   color: $color-text-description;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
+  }
+
+  .copyright__text {
+    width: 140px;
   }
 }

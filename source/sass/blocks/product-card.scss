@@ -1,14 +1,13 @@
 .product-card {
   width: 100%;
   border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
 }
 
 .product-card__container {
   width: 280px;
   min-height: 207px;
   margin: 0 auto;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 9px;
   display: grid;
   grid-template-columns: 140px 140px;
@@ -31,6 +30,7 @@
 
 .product-card__image {
   margin-top: 23px;
+  width: inherit;
 
   &--big {
     margin-top: 20px;
@@ -97,7 +97,7 @@
 
 .product-card__button {
   grid-column: 1/-1;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -150,14 +150,14 @@
   }
 
   .product-card__image {
-    margin-top: 25px;
+    margin-top: 28px;
 
     &--big {
       margin-top: 0;
     }
 
     &--small {
-      margin-top: 23px;
+      margin-top: 26px;
     }
   }
 
@@ -171,7 +171,7 @@
 
     &--more {
       margin: 0 auto;
-      padding-top: 150px;
+      padding-top: 152px;
 
       @include text-size(20px, 22px, 400);
 
@@ -191,7 +191,7 @@
   .product-card__description-list {
     width: 250px;
     padding-top: 5px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -213,7 +213,7 @@
   .product-card__button {
     width: 248px;
     min-height: 40px;
-    margin-top: 22px;
+    margin-top: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -236,6 +236,18 @@
     width: 172px;
     height: 196px;
     margin-bottom: 14px;
+  }
+
+  .product-card__image {
+    margin-top: 24px;
+
+    &--big {
+      margin-top: -4px;
+    }
+
+    &--small {
+      margin-top: 22px;
+    }
   }
 
   .product-card__image-big {
@@ -273,5 +285,10 @@
 
   .product-card__button {
     width: 168px;
+    margin-top: 26px;
+
+    &--secondary {
+      margin-top: 72px;
+    }
   }
 }
