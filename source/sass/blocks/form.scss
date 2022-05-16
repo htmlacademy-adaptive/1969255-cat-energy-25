@@ -82,6 +82,16 @@
   border-radius: 50%;
 }
 
+.form__field--radio:focus .form__mark--radio,
+.form__field--radio:focus-within .form__mark--radio {
+  border: 1px solid #aaaaaa;
+}
+
+.form__field--check:focus .form__mark--check,
+.form__field--check:focus-within .form__mark--check {
+  border: 1px solid #aaaaaa;
+}
+
 .form__radio[type="radio"]:checked + .form__mark--radio {
   &::before,
   &::after {
