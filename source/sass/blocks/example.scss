@@ -47,7 +47,7 @@
 .example__stats-item-value {
   width: 124px;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 17px;
   font-family: $title-font;
   color: $color-text;
@@ -106,7 +106,7 @@
 
   .example__wrapper {
     width: 708px;
-    padding-bottom: 56px;
+    padding-bottom: 58px;
   }
 
   .example__title {
@@ -124,7 +124,7 @@
   }
 
   .example__stats {
-    margin-top: 54px;
+    margin-top: 52px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -138,7 +138,7 @@
   .example__stats-item-value {
     width: 164px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 
     @include text-size(30px, 37px, 400);
 
@@ -154,8 +154,7 @@
   }
 
   .example__stats-item-description {
-    bottom: -2px;
-    left: 17px;
+    bottom: -5px;
     width: 125px;
     padding: 0 6px;
     background-color: $color-bg-main;
@@ -163,8 +162,8 @@
     @include text-size(14px, 14px, 400);
 
     &--time {
-      width: 131px;
-      padding: 0 2px;
+      width: auto;
+      left: 13px;
     }
   }
 
@@ -182,7 +181,7 @@
   }
 
   .example__slider {
-    margin-top: 72px;
+    margin-top: 76px;
   }
 }
 
@@ -217,7 +216,7 @@
 
   .example__stats-item-description {
     background-color: $color-bg-second;
-    bottom: -4px;
+    bottom: -5  px;
   }
 
   .example__stats-description {
