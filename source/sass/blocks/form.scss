@@ -69,14 +69,10 @@
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
+}
 
-  &:hover {
-    border: 1px solid #bababa;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
+.form__field:hover .form__mark {
+  border: 1px solid #bababa;
 }
 
 .form__mark--radio {
@@ -84,6 +80,16 @@
   transform: translateY(-50%);
   left: -1px;
   border-radius: 50%;
+}
+
+.form__field--radio:focus .form__mark--radio,
+.form__field--radio:focus-within .form__mark--radio {
+  border: 1px solid #aaaaaa;
+}
+
+.form__field--check:focus .form__mark--check,
+.form__field--check:focus-within .form__mark--check {
+  border: 1px solid #aaaaaa;
 }
 
 .form__radio[type="radio"]:checked + .form__mark--radio {
@@ -200,7 +206,8 @@
   }
 }
 
-.form__control:not(:placeholder-shown):invalid ~ .form__control-icon {
+.form__control:not(:placeholder-shown):invalid ~ .form__control-icon,
+.form__control--invalid ~ .form__control-icon {
   &--email {
     stroke: #ff8282;
   }
@@ -306,10 +313,6 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 32px;
-}
-
-.section-form__text {
-  margin-top: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -477,11 +480,6 @@
     width: 282px;
     padding: 15px 45px;
   }
-
-  .section-form__text {
-    margin: 0;
-    align-self: center;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -595,14 +593,14 @@
     width: 1220px;
     margin-bottom: 60px;
     grid-template-columns: 244px 244px 244px 244px;
-    column-gap: 80px;
+    column-gap: 81px;
   }
 
   .form__button-wrapper {
     width: 1220px;
-    margin-bottom: 82px;
+    margin-bottom: 83px;
     grid-template-columns: 568px 568px;
-    column-gap: 80px;
+    column-gap: 81px;
   }
 
   .form__button {

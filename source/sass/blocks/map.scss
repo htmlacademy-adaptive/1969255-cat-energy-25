@@ -15,6 +15,11 @@
   height: 360px;
   margin: 0;
   border: none;
+  background-image: url("../img/map-index.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 362px;
+  background-color: $color-bg-second;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,6 +30,8 @@
 
   .map__frame {
     height: 400px;
+    background-image: url("../img/map-tablet.png");
+    background-size: 768px 400px;
   }
 }
 
@@ -41,6 +48,11 @@
     left: 0;
     width: 565px;
     min-height: 198px;
-    padding: 58px 80px;
+    padding: 60px 80px;
+  }
+
+  .map__frame {
+    background-image: url("../img/map-desktop.png");
+    background-size: 1440px 400px;
   }
 }
