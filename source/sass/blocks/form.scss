@@ -69,14 +69,10 @@
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
+}
 
-  &:hover {
-    border: 1px solid #bababa;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
+.form__field:hover .form__mark {
+  border: 1px solid #bababa;
 }
 
 .form__mark--radio {
@@ -200,7 +196,8 @@
   }
 }
 
-.form__control:not(:placeholder-shown):invalid ~ .form__control-icon {
+.form__control:not(:placeholder-shown):invalid ~ .form__control-icon,
+.form__control--invalid ~ .form__control-icon {
   &--email {
     stroke: #ff8282;
   }
