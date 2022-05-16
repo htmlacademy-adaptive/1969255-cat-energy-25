@@ -45,32 +45,32 @@
 
     <main class="main-container main-inner-container">
       <h1 class="main-inner-container__title main-inner-container__title--form">Подбор программы</h1>
-          <p class="main-inner-container__description main-inner-container__description--form">Заполните анкету, и мы подберем<br>
-            программу питания для вашего кота</p>
+      <p class="main-inner-container__description main-inner-container__description--form">Заполните анкету, и мы подберем<br>
+        программу питания для вашего кота</p>
       <section class="section-form">
-          <h2 class="visually-hidden">Форма для подбора программы</h2>
-          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__container">
-              <div class="form__fieldset-container">
-                <fieldset class="form__fieldset form__fieldset--cat">
-                  <div class="form__input-container">
-                    <label class="form__field" for="cat-name">Имя:* </label>
-                    <!-- Добавить класс form__control--invalid при помощи проверки onSubmit в JS для всех элементов с атрибутом required-->
-                    <input class="form__control" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
-                  </div>
-                  <div class="form__input-container">
-                    <label class="form__field" for="cat-weight">Вес&nbsp;(кг):* </label>
-                    <input class="form__control" type="text" id="cat-weight" placeholder="7" name="cat-weight" required>
-                  </div>
-                  <div class="form__input-container">
-                    <label class="form__field" for="cat-age">Возраст&nbsp;(лет): </label>
-                    <input class="form__control" type="text" id="cat-age" placeholder="7" name="cat-age" required>
-                  </div>
-                </fieldset>
-              </div>
+        <h2 class="visually-hidden">Форма для подбора программы</h2>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__container">
+            <div class="form__fieldset-container">
+              <fieldset class="form__fieldset form__fieldset--cat">
+                <div class="form__input-container">
+                  <label class="form__field" for="cat-name">Имя:* </label>
+                  <!-- Добавить класс form__control--invalid при помощи проверки onSubmit в JS для всех элементов с атрибутом required-->
+                  <input class="form__control" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
+                </div>
+                <div class="form__input-container">
+                  <label class="form__field" for="cat-weight">Вес&nbsp;(кг):* </label>
+                  <input class="form__control" type="text" id="cat-weight" placeholder="7" name="cat-weight" required>
+                </div>
+                <div class="form__input-container">
+                  <label class="form__field" for="cat-age">Возраст&nbsp;(лет): </label>
+                  <input class="form__control" type="text" id="cat-age" placeholder="7" name="cat-age" required>
+                </div>
+              </fieldset>
+            </div>
 
-              <fieldset class="form__fieldset form__fieldset--radio">
-                <div class="form__fieldset-container form__fieldset-container--radio">
+            <fieldset class="form__fieldset form__fieldset--radio">
+              <div class="form__fieldset-container form__fieldset-container--radio">
                 <label class="form__field form__field--radio">
                   <input class="form__radio visually-hidden" type="radio" name="programm-type" value="weight loss" checked>
                   <span class="form__mark form__mark--radio"></span>
@@ -87,71 +87,71 @@
                   <span class="form__label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
-              </fieldset>
+            </fieldset>
+          </div>
+
+          <fieldset class="form__fieldset form__fieldset--contacts">
+            <div class="form__legend-wrapper">
+              <h2 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h2>
             </div>
-
-            <fieldset class="form__fieldset form__fieldset--contacts">
-              <div class="form__legend-wrapper">
-                <h2 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h2>
+            <div class="form__fieldset-wrapper">
+              <div class="form__input-container form__input-container--contacts">
+                <label class="form__field form__field--email" for="email">E-mail:*</label>
+                <input class="form__control form__control--contacts form__control--email" id="email" type="email" placeholder="kuklachev@gmail.com" name="email" required>
+                <svg class="form__control-icon form__control-icon--email" width="20" height="15">
+                  <use href="img/sprite.svg#email-icon"></use>
+                </svg>
               </div>
-              <div class="form__fieldset-wrapper">
-                <div class="form__input-container form__input-container--contacts">
-                  <label class="form__field form__field--email" for="email">E-mail:*</label>
-                  <input class="form__control form__control--contacts form__control--email" id="email" type="email" placeholder="kuklachev@gmail.com" name="email" required>
-                  <svg class="form__control-icon form__control-icon--email" width="20" height="15">
-                    <use href="img/sprite.svg#email-icon"></use>
-                  </svg>
-                </div>
-                <div class="form__input-container form__input-container--contacts">
-                  <label class="form__field form__field--phone" for="phone">Телефон:*</label>
-                  <input class="form__control form__control--contacts form__control--phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
-                  <svg class="form__control-icon form__control-icon--phone" width="20" height="21">
-                    <use href="img/sprite.svg#phone-icon"></use>
-                  </svg>
-                </div>
+              <div class="form__input-container form__input-container--contacts">
+                <label class="form__field form__field--phone" for="phone">Телефон:*</label>
+                <input class="form__control form__control--contacts form__control--phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
+                <svg class="form__control-icon form__control-icon--phone" width="20" height="21">
+                  <use href="img/sprite.svg#phone-icon"></use>
+                </svg>
               </div>
-            </fieldset>
-
-            <fieldset class="form__fieldset form__fieldset--comments">
-              <div class="form__legend-wrapper">
-                <h2 class="form__legend form__legend--comments">Комментарий</h2>
-              </div>
-                <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота" name="cat-info"></textarea>
-            </fieldset>
-
-            <fieldset class="form__fieldset form__fieldset--checkbox">
-              <div class="form__legend-wrapper">
-                <h2 class="form__legend form__legend--additional">Дополнительно</h2>
-              </div>
-              <div class="form__checkbox-wrapper">
-                <label class="form__field form__field--check">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="sweetener" checked>
-                  <span class="form__mark form__mark--check"></span>
-                  <span class="form__label form__label--check">Cахарозаменитель</span>
-                </label>
-                <label class="form__field form__field--check">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="drinking water">
-                  <span class="form__mark form__mark--check"></span>
-                  <span class="form__label form__label--check">Питьевая вода</span>
-                </label>
-                <label class="form__field form__field--check">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="milk">
-                  <span class="form__mark form__mark--check"></span>
-                  <span class="form__label form__label--check">Молоко</span>
-                </label>
-                <label class="form__field form__field--check">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins">
-                  <span class="form__mark form__mark--check"></span>
-                  <span class="form__label form__label--check">Витамины</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <div class="form__button-wrapper">
-              <button class="form__button button button--primary" type="submit">Отправить заявку</button>
-              <p class="section-form__text">* — Обязательные поля</p>
             </div>
-          </form>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--comments">
+            <div class="form__legend-wrapper">
+              <h2 class="form__legend form__legend--comments">Комментарий</h2>
+            </div>
+            <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота" name="cat-info"></textarea>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--checkbox">
+            <div class="form__legend-wrapper">
+              <h2 class="form__legend form__legend--additional">Дополнительно</h2>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <label class="form__field form__field--check">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="sweetener" checked>
+                <span class="form__mark form__mark--check"></span>
+                <span class="form__label form__label--check">Cахарозаменитель</span>
+              </label>
+              <label class="form__field form__field--check">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="drinking water">
+                <span class="form__mark form__mark--check"></span>
+                <span class="form__label form__label--check">Питьевая вода</span>
+              </label>
+              <label class="form__field form__field--check">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="milk">
+                <span class="form__mark form__mark--check"></span>
+                <span class="form__label form__label--check">Молоко</span>
+              </label>
+              <label class="form__field form__field--check">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins">
+                <span class="form__mark form__mark--check"></span>
+                <span class="form__label form__label--check">Витамины</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form__button-wrapper">
+            <button class="form__button button button--primary" type="submit">Отправить заявку</button>
+            <p class="section-form__text">* — Обязательные поля</p>
+          </div>
+        </form>
       </section>
 
       <section class="map map-inner">
@@ -205,15 +205,15 @@
             </li>
           </ul>
         </div>
-          <div class="main-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
-              <p class="copyright__text">HTML Academy</p>
-              <svg class="copyright__icon" role="img" aria-hidden="true" focusable="false" width="27" height="34">
-                <use href="img/sprite.svg#academy"></use>
-              </svg>
-              <span class="visually-hidden">Ссылка на на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
-            </a>
-          </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__icon" role="img" aria-hidden="true" focusable="false" width="27" height="34">
+              <use href="img/sprite.svg#academy"></use>
+            </svg>
+            <span class="visually-hidden">Ссылка на на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
