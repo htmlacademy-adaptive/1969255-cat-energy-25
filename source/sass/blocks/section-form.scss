@@ -1,6 +1,7 @@
 .section-form__text {
   font-family: $main-font;
   text-align: center;
+  margin-top: 21px;
 
   @include text-size(14px, 16px, 400);
 }
@@ -8,7 +9,14 @@
 @media (min-width: $tablet-width) {
   .section-form__text {
     text-align: start;
+    margin-top: 14px;
 
     @include text-size(16px, 16px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-form__text {
+    margin-top: 16px;
   }
 }
