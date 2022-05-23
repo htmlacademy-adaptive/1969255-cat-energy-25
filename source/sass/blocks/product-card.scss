@@ -125,6 +125,7 @@
 @media (min-width: $tablet-width) {
   .product-card {
     border: none;
+    background: linear-gradient(#ffffff 81px, #f2f2f2 81px);
   }
 
   .product-card__container {
@@ -133,13 +134,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(#ffffff 81px, #f2f2f2 81px);
 
     &--more {
       min-height: 429px;
       margin-top: 81px;
       border: 2px solid #f2f2f2;
-      background: transparent;
+      background: $color-bg-main;
     }
   }
 
@@ -163,7 +163,7 @@
 
   .product-card__title {
     width: 150px;
-    margin-top: 24px;
+    margin-top: 22px;
     margin-left: 52px;
     text-align: center;
 
@@ -256,7 +256,7 @@
 
   .product-card__title {
     margin-top: 28px;
-    margin-left: 18px;
+    margin-left: 20px;
 
     @include text-size(20px, 21px, 400);
 
