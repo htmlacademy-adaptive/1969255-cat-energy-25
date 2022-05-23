@@ -112,8 +112,7 @@
     margin-top: 32px;
     display: grid;
     grid-template-columns: 245px 245px;
-    grid-template-rows: 280px 280px;
-    row-gap: 37px;
+    row-gap: 92px;
     column-gap: 138px;
   }
 
@@ -196,7 +195,6 @@
   .about-programm__list {
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
-    grid-template-rows: 280px;
     column-gap: 80px;
   }
 

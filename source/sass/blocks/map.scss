@@ -10,11 +10,8 @@
 }
 
 .map__frame {
-  display: block;
   width: 100%;
   height: 360px;
-  margin: 0;
-  border: none;
   background-image: url("../img/map-index.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -27,6 +24,7 @@
     margin-top: 64px;
     margin-bottom: 56px;
   }
+
 
   .map__frame {
     height: 400px;
@@ -49,6 +47,7 @@
     width: 565px;
     min-height: 198px;
     padding: 60px 80px;
+    z-index: 2;
   }
 
   .map__frame {
